@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Posting Form</title>
+  <!-- Add Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px 20px;
+      background-color: #ffffff;
+      border-radius: 40px;
+      font-size:20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #007bff;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+      
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 2px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      padding-right:20px;
+      font-size: 25px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Job Posting Form</h2>
+    <form action="/submit_job" method="post">
+      <label for="jobTitle">Job Title:</label>
+      <input type="text" id="jobTitle" name="jobTitle" required>
+
+      <label for="companyName">Company Name:</label>
+      <input type="text" id="companyName" name="companyName" required>
+
+      <label for="jobDescription">Job Description:</label>
+      <textarea id="jobDescription" name="jobDescription" rows="5" required></textarea>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="salary">Salary:</label>
+      <input type="text" id="salary" name="salary" required>
+
+      <label for="contactEmail">Contact Email:</label>
+      <input type="email" id="contactEmail" name="contactEmail" required>
+
+      <label for="applicationDeadline">Application Deadline:</label>
+      <input type="date" id="applicationDeadline" name="applicationDeadline" required>
+
+      <label for="jobType">Job Type:</label>
+      <select id="jobType" name="jobType" required>
+        <option value="fullTime">Full-Time</option>
+        <option value="partTime">Part-Time</option>
+        <option value="contract">Contract</option>
+        <option value="temporary">Temporary</option>
+        <option value="internship">Internship</option>
+      </select>
+
+      <label for="jobCategory">Job Category:</label>
+      <input type="text" id="jobCategory" name="jobCategory">
+
+      <label for="jobRequirements">Job Requirements:</label>
+      <textarea id="jobRequirements" name="jobRequirements" rows="5" required></textarea>
+
+      <label for="howToApply">How to Apply:</label>
+      <textarea id="howToApply" name="howToApply" rows="5" required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

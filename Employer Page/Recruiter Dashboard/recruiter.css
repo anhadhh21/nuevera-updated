@@ -1,0 +1,108 @@
+/* styles.css */
+
+/* Dashboard Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #ff5722;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Dashboard Content */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.overview, .navigation-panel {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.overview h2, .navigation-panel h2 {
+    margin-bottom: 10px;
+}
+
+.active-jobs, .applicant-stats, .pending-actions {
+    margin-bottom: 20px;
+}
+
+.navigation-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation-panel li {
+    margin-bottom: 10px;
+}
+
+.navigation-panel a {
+    text-decoration: none;
+    color: #333;
+}
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.applicant-tracking, .recruiter-resources {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.applicant-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.applicant {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.applicant h2 {
+    margin: 0;
+}
+
+.applicant p {
+    margin: 5px 0;
+}
+
+.applicant a {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.sorting-options {
+    margin-bottom: 20px;
+}
+
+.sorting-options label {
+    margin-right: 10px;
+}
+
+.resource-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resource-list a {
+    text-decoration: none;
+    color: #007bff;
+}

@@ -1,0 +1,762 @@
+<html>
+    <head>
+        <title>Job portal</title>
+      <link rel="icon" href="logo.jpg" type="image">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <link href='https://fonts.googleapis.com/css?family=Noto Sans HK' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/287c8caa8a.js" crossorigin="anonymous"></script>
+    <style>
+        .hero{
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/background.png);
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.bubbles img{
+    width: 200px;
+    animation: bubble 7s linear infinite;
+    align-items: center;
+}
+.bubbles{
+    width: 100%;
+    display: fles;
+align-items: center;
+justify-content: space-around;
+position: absolute;
+bottom: 0;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+       
+        opacity: 1;
+    }
+    70%{
+       
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.pink{
+    background-color:skyblue;
+}
+.orange{
+    height: 100vh;
+    width: 100%;
+     background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+     background-size: 300% 300%;
+     animation: color 12s ease-in-out infinite;
+}
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+.box{
+  position: relative;
+   width: 200px;
+   height: 200px;
+   background: repeating-conic-gradient(from var(--a),#ff2770 0%,#ffa927 5%, transparent 40%,#ff2770 50%);
+   animation: animate 4s linear infinite;
+   border-radius: 30px;
+
+}
+@property --a 
+{
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0;
+}
+@keyframes animate
+{
+  0%
+  {
+    --a: 0deg;
+  }
+  100%
+  {
+    --a:360deg;
+  }
+}
+.box::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a),#ff2770 0%,#ffa927 5%, transparent 5%,transparent 40%,#ff2770 50%);
+    animation: animate 4s linear infinite;
+}
+.box ::after
+{
+    content: '';
+    position: absolute;
+    inset: 8px;
+    background: none;
+    border-radius: 30px;
+    border: 8px solid none;
+}
+.card{
+    
+    width: 150px;
+    height: 150px;
+    background: none;
+}
+.card::before{
+content: '';
+position: absolute;
+inset: -3px;
+background: linear-gradient(45deg,#00ccff,#0e1538,#0e1538,#d400d4);
+box-shadow: 0 0 0 20px #070c23;
+z-index: -1;
+
+}
+.card::after
+{
+content: '';
+position: absolute;
+inset: -3px;
+background: linear-gradient(45deg,#00ccff,#0e1538,#0e1538,#d400d4);
+box-shadow: 0 0 0 20px #070c23;
+z-index: -1;
+filter: blur(20px);
+}
+.curved-div {
+  background: #ff3c00;
+  color: #FFF;
+  text-align: center;
+}
+.curved-div svg {
+  display: block;
+}
+.radi{
+    border-radius: 50px;
+    border-color: #d2001a;
+}
+
+
+
+
+
+    </style>
+        </head>
+    <body> 
+       <div class="hero"
+                
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg  py-2 " style="background-color: none;">
+                        <img class="navbar-brand" width="100" style="margin-left: 5%;" src="img/nuvera-removebg-preview.png" alt="" >
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                       <div class="collapse navbar-collapse justify-content-between " id="navbarCollapse"> 
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link"  href="home.html"><p class="btn btn-outline-primary">HOME</p></a>
+                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="#"><p class="btn btn-outline-primary">JOBS</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"><p class="btn btn-outline-primary">ABOUT US</p></a>
+                            </li> 
+                            <li lass="nav-item">
+                                <a class="nav-link" href="contact.html"><p class="btn btn-outline-primary">CONTACT</p></a>
+                            </li>
+                        </ul>
+                         <form class="d-flex inline ">
+                           
+                            <!-- <button class="btn0 btn btn-primary"><a href="sign in.html" style="color:white;text-decoration: none;">Sign in</a></button>
+                            <button class="btn1 mx-2 btn btn-primary"><a href="sign up.html" style="color: white; text-decoration: none; ">Sign up</a> </button> -->
+                            <div class="dropdown">
+                                <button type="button" class="btn border dropdown-toggle btn btn-outline-primary" data-bs-toggle="dropdown">
+                                ACCOUNT
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <!-- sign in.html -->
+                                  <li><a class="dropdown-item btn btn-outline-light" href="/Candidate-Page/index.html"><p class="text-primary">Candidate</p></a></li>
+                                  <li><a class="dropdown-item btn btn-outline-light" href="/Employer Page/home.html"><p class="text-primary">Employer</p></a></li>
+                                </ul>
+                            </div>
+                          </form>   
+                      </div>
+                    </nav>
+                   
+        <section class="main py-5">
+            
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h1>Find your dream startup<br>jobs now!</h1><br>
+                        <input type="text" style="width:50%;height:20%" placeholder="Job Title or keyword">
+                        <button class="btn btn-outline-primary" style="width:17%;height:20%;">Find Jobs</button>
+                    </div>    
+                </div>   
+                <div class="bubbles">
+                    <img src="img/bubble.png">
+                    <img src="img/bubble.png">
+                    <img src="img/bubble.png">
+                    <img src="img/bubble.png">
+                    <img src="img/bubble.png">
+            </div>   
+        </div> 
+    </div>
+</div>
+</div>
+</div>
+</div>
+        </section>  
+        
+                </div>  
+                </section>  
+                <div class="pink">
+                <section class="category">
+                    <div class="container  py-5">
+                        <h1 class="text-center">Browse Top Categories</h1><br>
+                        <div class="row">
+                           <div class="col-lg-12 m-auto mt-3">
+                            <div class="row">
+                                <div class="col-lg-3 ">
+                                    <div class="card shadow" style="height:100%">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS35NfkXE6Onkg66OIIIE33z0OFBBTypmnoSg&usqp=CAU" alt=""><br><br>
+                                        <h6 class="text-center">Education training</h6><br>
+                                    </div>
+                                 </div>   
+                                 <div class="col-lg-3">
+                                    <div class="card shadow" style="height:100%">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsDkUk-jmB9mmV7V_RVY3V24rsG8E2zNQ-Eg&usqp=CAU" alt=""><br><br>
+                                        <h6 class="text-center">Design & creative</h6><br>
+                                    </div>
+                                 </div> 
+                                 <div class="col-lg-3">
+                                    <div class="card shadow" style="height:100%">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuuKfo5wskURCQV1d-MJFbFVcf9vJx9-zk0g&usqp=CAU" alt=""><br>
+                                        <h6 class="text-center">Accounting & finance<br>(645)</h6><br>
+                                    </div>
+                                 </div> 
+                                 <div class="col-lg-3">
+                                    <div class="card shadow" style="height:100%">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnDj_PVADU4ZWZOnKDy9nb9FHaxUP6cFAdEQ&usqp=CAU" alt=""><br>
+                                        <h6 class="text-center">HR/org development</h6><br>
+                                    </div>
+                                 </div> 
+                            </div><br>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="card shadow" style="height: 100%;">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy1j-7YsssJHMeTE2IWGK-7rxo-s8LGdk-rw&usqp=CAU" alt=""><br>
+                                        <h6 class="text-center">Sales & marketing</h6><br>
+                                    </div>    
+                                </div> 
+                                <div class="col-lg-3">
+                                    <div class="card shadow" style="height: 100%;">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwBT-Gjhvi7Msrciv7FD68qOo2Gk2FUkbn0w&usqp=CAU" alt=""><br>
+                                        <h6 class="text-center">Production</h6><br>
+                                    </div>    
+                                </div> 
+                                <div class="col-lg-3">
+                                    <div class="card shadow" style="height: 100%;">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVsetZ7cxdCVILKsBYa-haG0C83nOM5GWp6g&usqp=CAU" alt=""><br>
+                                        <h6 class="text-center">Engineer/architects</h6><br>
+                                    </div>    
+                                </div> 
+                                <div class="col-lg-3">
+                                    <div class="card shadow" style="height: 100%;">
+                                        <img src="https://static.vecteezy.com/system/resources/previews/000/596/077/original/search-logo-and-symbol-template-vectors.jpg" alt="">
+                                        <h6 class="text-center">Research/consultancy</h6><br>
+                                    </div>    
+                                </div> 
+                            </div>       
+                         </div>
+                      </div><br>     
+                           <!-- <div class="row">
+                              <div class="col-lg-5 m-auto">
+                                <input type="button" class="btn3 btn btn-primary" style="margin-left: 15%;" value="BROWSE ALL CATEGORIES">
+                               </div> 
+                           </div>  -->
+                        </div>    
+                    </div>  
+                  
+                </section>  
+                <br>
+
+                <!-- main-page-start -->
+                <div class="orange">
+                <div id="iqbal">
+        <h1>Internship</h1>
+        <p>Apply to 100+ internships for free
+            <!-- <a href="">View all internships</a> -->
+        </p>
+        <div class="citycat">
+            <h3>Popular cities</h3>
+            <div>
+                <div class="iq">
+
+                    <img src="https://internshala.com/static/images/home/internships/categories/work_from_home.svg"
+                        alt="">
+                    <p>Work from home</p>
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/delhi_ncr.svg" alt="">
+                    <p>Delhi/NCR</p>
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/bangalore.svg" alt="">
+                    <p>Banglore</p>
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/mumbai.svg" alt="">
+                    <p>Mumbai</p>
+                </div>
+                <div class="iq">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzuBhs7dYCw1-thb7achQYDooUx3R4Ahe5_ZrcgqHoxZOalKC1O6gddyf2M_5pjX48IJI&usqp=CAU" alt="">
+                    <p>Pune</p>
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/hyderabad.svg" alt="">
+                    <p>Hyderabad</p>
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/chennai.svg" alt="">
+                    <p>Chennai</p>
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/kolkata.svg" alt="">
+                    <p>Kolkata</p>
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/international.svg"
+                        alt="">
+                    <p>International</p>
+                </div>
+            </div>
+        </div>
+        <div class="citycat">
+            <h3>Popular Catageties</h3>
+            <div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/part_time.svg" alt="">
+                    <p>Part-time</p>
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/engineering.svg" alt="">
+                    <p>Engineering</p>
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/ngo.svg" alt="">
+                    <p>NGO</p>
+                </div>
+                <div class="iq">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCCVDODrwH9Ki4nBBZBK_eMensUuUVDZwsEJtXsP_GDLGY19ICKK9JG6fZxUFXAYRyn1M&usqp=CAU" alt="">
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/design.svg" alt="">
+                    <p>Design</p>
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/science.svg" alt="">
+                    <p>Science</p>
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/media.svg" alt="">
+                    <p>Media</p>
+                </div>
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/internships/categories/humanities.svg" alt="">
+                    <p>Humanities</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="iqbal">
+       
+        <h1 style="color:pink;">Get real time jobs and more!</h1>
+        <!-- <img
+                src="https://internshala.com/cached_uploads/offer_tags/6238126b4a0b01647841899.png" alt=""> -->
+        <p style="color:blue;">Learn new-age skills on the go</p>
+        <!-- <a href="">View all trainings</a> -->
+        <div class="citycat">
+            <div>
+                <div class="box">
+                    <div class="iq">
+                    <img src="https://internshala.com/static/images/home/trainings/icons/programming_with_python.svg"
+                        alt="">
+                    <p>Programming with
+                        Python</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/trainings/icons/digital_marketing.svg" alt="">
+                    <p>Digital Marketing</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="iq">
+                    <img src="https://internshala.com/static/images/home/trainings/icons/web_development.svg" alt="">
+                    <p>Web web_development</p>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="iq">
+                    <img src="https://internshala.com/static/images/home/trainings/icons/machine_learning.svg" alt="">
+                    <p>Machine Learning</p>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="iq">
+                    <img src="https://internshala.com/static/images/home/trainings/icons/advanced_excel.svg" alt="">
+                    <p>Advanced Excel</p>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="iq">
+                    <img src="https://img.freepik.com/free-vector/creative-hacker-logo-template_23-2149212792.jpg" alt="">
+                </div>
+                </div>
+                <div class="box">
+                    <div class="iq">
+                    <img src="https://internshala.com/static/images/home/trainings/icons/autocad.svg" alt="">
+                    <p>AutoCAD</p>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="iq">
+                    <img src="https://e7.pngegg.com/pngimages/467/9/png-clipart-digital-marketing-website-content-writer-content-writing-services-marketing-search-engine-optimization-pencil.png" alt="">
+                    <p>Creative Writing</p>
+                </div>
+</div>
+            </div>
+            <p style="text-align: center;">& 52 more...</p>
+        </div>
+        <div id="iqbal">
+
+            <h1 style="color:pink;">Specializations </h1>
+            <p style="color:#4285f8;">With a min. ₹10,000/month stipend</p>
+            <!-- <a href="">View all specializations</a> -->
+            <div class="citycat">
+                <div>
+                    <div class="box">
+                    <div class="iq">
+                        <img src="https://w7.pngwing.com/pngs/495/565/png-transparent-human-resource-management-business-text-people-logo.png"
+                            alt="">
+                        <p>Management</p>
+                    </div>
+                    </div>
+                    <div class="box">
+
+                    <div class="iq">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPDGqpm7Rai9OJCAcLoTW6rRrUfWX7V_PxIyk0EX-2gkTMdt6aKFOBUH-_OL0Rr3Pbby0&usqp=CAU"
+                            alt="">
+                        <p>Marketing</p>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                    <div class="iq">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfYfqDNEx4q9uOW9vgIeqy8wROmoWsUCdODg&usqp=CAU" alt="">
+                        <p>Data Science</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="iqbal">
+            <h1 >JOB</h1>Premium jobs on your fingertips & cities Catageties
+                <!-- <a href="">View all jobs</a> -->
+            </p>
+            <div class="citycat">
+                <h3 style="color:blueviolet"> cities</h3>
+                <div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/work_from_home.svg"
+                            alt="">
+                        <p>Work from home</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/delhi_ncr.svg"
+                            alt="">
+                        <p>Delhi/NCR</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/bangalore.svg"
+                            alt="">
+                        <p>Banglore</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/mumbai.svg" alt="">
+                        <p>Mumbai</p>
+                    </div>
+                  </div>
+                 <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/hyderabad.svg"
+                            alt="">
+                        <p>Hyderabad</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/chennai.svg" alt="">
+                        <p>Chennai</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/kolkata.svg" alt="">
+                        <p>Kolkata</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/international.svg"
+                            alt="">
+                        <p>International</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="citycat">
+                <h3 style="color:blueviolet"> Catageties</h3>
+                <div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/part_time.svg"
+                            alt="">
+                        <p>Part-time</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/engineering.svg"
+                            alt="">
+                        <p>Engineering</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/ngo.svg" alt="">
+                        <p>NGO</p>
+                    </div>
+            </div>
+            <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/design.svg" alt="">
+                        <p>Design</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/science.svg" alt="">
+                        <p>Science</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/media.svg" alt="">
+                        <p>Media</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="iq">
+                        <img src="https://internshala.com/static/images/home/internships/categories/humanities.svg"
+                            alt="">
+                        <p>Humanities</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+        </div>
+                <!-- main-page-end -->
+
+                <!-- <section class="resume py-5">
+                    <div class="container py-5">
+                        <div class="row">
+                            <div class="col-lg-10 m-auto">
+                              <h1 class="text-center" style="font-size:40px">Make a Differnce with your<br> online resume!</h1>
+                            </div>   
+                         </div><br>
+                         <div class="row">
+                            <div class="col-lg-5 m-auto">
+                              <input type="file" style="margin-left: 14%;" text="name" >
+                            
+                            </div>   
+                         </div>  
+                    </div>    
+                </section> <br>    -->
+                
+                <div class="container">
+                    <div class="radi">
+                    <h2 class="text-center">How it works?</h2>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="img/img12.jpg" alt=""><br>
+                            <h2 style="font-size:35px">Connect with people who can help</h2>
+                            <!-- <button type="button" class="b1 btn btn-outline-primary border border-1 text-muted" style="width:40%;height:40px;border-radius:20px;padding:3px;color:white">Find people you know</button> -->
+                        </div> 
+                    
+                      
+                        <div class="col-lg-6">
+                            <img src="img/img13.jpg" alt=""><br><br><br>
+                            <h2 style="font-size:34px">Learn the skills you need to succeed</h2>
+                            <!-- <div class="dropdown">
+                                <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown">
+                                 Choose a topic to learn about 
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Training & Education</a></li>
+                                  <li><a class="dropdown-item " href="#">Mobile Development</a></li>
+                                  <li><a class="dropdown-item " href="#">Finance Acccounting</a></li>
+                                  <li><a class="dropdown-item " href="#">Web Design</a></li>
+                                  <li><a class="dropdown-item " href="#">Data Science</a></li>
+                                  <li><a class="dropdown-item " href="#">Web Development</a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                            
+                   </div> 
+                </div>
+            </div>
+        
+        <br><br>
+
+           
+        <div class="footer">
+            < class="container bg-light"><br>
+                <div class="row">
+                   <div class="col">
+                      <h1>1k+ users on the Bitrix App<h5 class="text-muted">Get real time internships and more!</h5></h1><br>
+                      <input type="text" class="text-info" style="width:50%;height:13.5%; border: none;" placeholder="Enter Email...">
+                      <!--<button type="submit" class="btn btn-primary rounded"  style="width:9%;height:35px;margin-right: 10%;">Submit</button>-->
+                      <input type="submit" class="btn btn-outline-primary">
+                   </div>   
+                   <div class="col">
+                       <img src="img/img14.jpg" width="75%" alt="">
+                   </div> 
+                </div> <br> 
+            
+            
+            
+        </div> <br>
+    
+        <div class="curved-div">
+            <svg viewBox="0 0 1440 319">
+    <path fill="#fff" fill-opacity="1" d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+  </svg>
+                <div class="container text-center bg-light text-md-left">
+                    <div class="row text-center text-md-left">
+                       <div class="col-lg-3 col-lg-3  mx-auto mt-3">
+                       <p> 
+                          <img src="img/nuvera-removebg-preview.png" alt="" style="width:40%">
+                        </p>
+                        <p>
+                            <h5 class=" mb-4 font-weight-bold text-muted">Connect us</h5>
+                        </p>
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-2xl" style="color: #4285f8;"></i></a>
+                                <a href="https://www.twitter.com"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                              
+                         </div>
+                            </li> 
+                            
+                         </ul>
+                         <div class="col-lg-2 col-lg-2 col-lg-2  mx-auto mt-3">
+                            
+                              <p>
+                                <a href="#" class="text-dark" style="text-decoration: none;">About us</a>
+                              </p>
+                              <p>
+                                <a href="#" class="text-dark" style="text-decoration: none;">Careers</a>
+                             </p>
+                             <p>
+                              <a href="#" class="text-dark" style="text-decoration: none;">Employer home</a>
+                             </p>
+                             <p>
+                                <a href="#" class="text-dark" style="text-decoration: none;">sitemap</a>
+                            </p>
+                              
+                        </div>
+                        <div class="col-lg-2 col-lg-2 col-lg-2  mx-auto mt-3">
+                            
+                            <p>
+                              <a href="#" class="text-dark" style="text-decoration: none;">Help center</a>
+                            </p>
+                            <p>
+                              <a href="#" class="text-dark" style="text-decoration: none;">Notices</a>
+                           </p>
+                           <p>
+                            <a href="#" class="text-dark" style="text-decoration: none;">Grivances</a>
+                           </p>
+                           <p>
+                              <a href="#" class="text-dark" style="text-decoration: none;">Report issue</a>
+                          </p>
+                            
+                      </div>
+                      <div class="col-lg-2 col-lg-2 col-lg-2  mx-auto mt-3">
+                            
+                        <p>
+                          <a href="#" class="text-dark" style="text-decoration: none;">Privacy policy</a>
+                        </p>
+                        <p>
+                          <a href="#" class="text-dark" style="text-decoration: none;">Terms & conditions</a>
+                       </p>
+                       <p>
+                        <a href="#" class="text-dark" style="text-decoration: none;">Fraud alert</a>
+                       </p>
+                       <p>
+                          <a href="#" class="text-dark" style="text-decoration: none;">Trust & safety</a>
+                      </p>
+                        
+                    </div>
+                </div><hr>
+                <div class="row d-flex justify-content-center text-muted">
+                    <div>
+                       <p  class="text-dark">
+                           Nuvera Infotech copyright ©2023 
+                          <a href="#" style="text-decoration: none;">
+                          
+                       </p> 
+                    </div>
+                 </div>
+             </div> 
+          </div> 
+          </div>
+          <script src="style.js"></script>  
+    </body>
+
+</html>
+                

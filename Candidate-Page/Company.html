@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Information</title>
+  <style>
+    :root {
+     --primarycolor: #362FD9;
+  --secondarycolor: blue;
+      --fontcolor: #1e1e1e;
+      --whitecolor: #fff;
+      --greycolor: #e7e7e7;
+      --drakGreyColor: #5f5f5f;
+      --sofPurple: #e7e8ff;
+      --softBlue: #c3e1ff;
+      --softYellow: #fff5cc;
+      --softRed: #ffcbc8;
+    }
+    .sidebar {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color: var(--primarycolor);
+      color: var(--whitecolor);
+      position: fixed;
+      left: 0;
+    }
+
+    .logo {
+      letter-spacing: 2;
+      font-size: 50px; /**/
+    }
+
+
+  .menus {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+.menus a {
+    display: flex;
+    align-items: center;
+    color: var(--whitecolor);
+    text-decoration: none;
+    font-size: 30px;/**/
+  }
+  menus a.active{ 
+    font-size: 50px;
+  }
+
+  .menus ion-icon {
+    margin-right: 0.5rem;
+  }
+
+  .menus a:hover {
+    color: var(--secondarycolor);
+  } 
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: var(--whitecolor);
+    color: var(--fontcolor);
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+  }
+
+  .profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .profile:hover {
+    background-color: var(--secondarycolor);
+  }
+
+  .profile-name p {
+    font-size: 12px;/**/
+  }
+
+  .main {
+  width: calc(100% - 20% - 25%);
+  min-height: 100%;
+  min-width: 300px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2%;
+  margin-left: 20%;
+  background-color: var(--sofPurple);
+  z-index: 1;
+}
+
+
+
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+
+    }
+  .search {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-color: var(--whitecolor);
+ 
+  
+  } 
+  .menu-bar {
+    background-color: var(--whitecolor);
+    padding: 0.5rem;
+    border-radius: 20px;
+    display: none;
+  
+  
+  }
+
+  .search input {
+    width:90%;
+    border: none;
+    font-size: 25px; /*Reduced the font size to fit better*/
+  }
+
+  .btn-search {
+  
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 5%;
+    border: none;
+    background-color: var(--primarycolor);
+    color: var(--whitecolor);
+    font-size: 18px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+  
+  }
+
+  .btn-search:hover {
+    background-color: var(--secondarycolor);
+    color: var(--fontcolor);
+  }
+
+
+   main {
+      padding: 2rem;
+      background-color: var(--sofPurple);
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      width: calc(20%- 100% - 20%);
+      padding-left:25%
+    }
+
+    .company-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* three columns per row */
+      grid-gap: 2rem;
+      
+    }
+
+    .company {
+      border: 0.5px solid #d4d4d4;
+      border-radius: 20px;
+      padding: 1rem;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background-color: #D4E2D4;
+      text-decoration: none;
+      ;
+    }
+
+    .Description ion-icon {
+      margin-right: 0.5rem;
+
+    }
+
+    .company h3 {
+      margin-top: 0;
+      font-size: 20px;
+      
+
+    }
+
+    .company-container :hover {
+      background-color: #9BE8D8;
+    }
+
+    .company p {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .company a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .company a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="sidebar">
+    <h1 class="logo">Neuvera Jobs.</h1>
+    
+    <div class="menus">
+        <a class="home" href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a>
+        <a href="Our_services.html"><ion-icon name="newspaper-outline"></ion-icon> Our Services</a>
+        <a href="Company.html"><ion-icon name="server-outline"></ion-icon> Company</a>
+        <a href="#"><ion-icon name="bookmarks-outline"></ion-icon> Bookmarks</a>
+        <a href="contact.html"><ion-icon name="mail-unread-outline"></ion-icon> Contact us</a>
+        <a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a>
+    </div>
+    
+    <div class="profile">
+      <img class="profile-img" src="images/profile.png" alt="">
+      <div class="profile-name">
+        <h4>Albert Einstein</h4>
+        <p>Data science</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <main>
+    <div class="main-header">
+      <ion-icon class="menu-bar"name="menu-outline"></ion-icon>
+      <div class="search">
+        <input type="text" placeholder="Search your best job here....">
+        <button class="btn-search"><ion-icon name="search-outline"></ion-icon></button>
+      </div>
+
+    <section>
+      <h2 style="font-size: 25px;color:var(--drakGreyColor)">Welcome to Neuvera Jobs- Your Gateway to Career Opportunities!</h2>
+      
+      <div class="company-container">
+        <!-- Replace the following code with dynamic data fetched from the backend -->
+
+        <div class="company">
+          <h3>YATHARTH ENTERPRISE (OPC) PRIVATE LIMITED
+          </h3>
+          <p><ion-icon name="book-outline"></ion-icon> About: Retail sale via e-commerce</p>
+          <p><ion-icon name="wallet-outline"></ion-icon> Paid up:50000
+          </p>
+          <p><ion-icon name="location-outline"></ion-icon> Location:Uttarakhand
+          </p>
+          <p><ion-icon name="at-outline"></ion-icon>Website: <a href="sscorporatereg@gmail.com">sscorporatereg@gmail.com</a></p>
+        </div>
+
+        <div class="company">
+          <h3>DARSHISH CROPSCIENCE PRIVATE LIMITED
+          </h3>
+          <p><ion-icon name="book-outline"></ion-icon>About:
+            Retail sale of seeds, fertilisers, pesticides, machinery equipments and hand tools.</p>
+            <p><ion-icon name="wallet-outline"></ion-icon> Paid up:50000
+            </p>
+          <p><ion-icon name="location-outline"></ion-icon> Location:Rajasthan
+          </p>
+          <p><ion-icon name="at-outline"></ion-icon>Website: <a href="darshishcropsciencepvtltd@gmail.com
+            ">darshishcropsciencepvtltd@gmail.com
+          </a></p>
+        </div>
+
+        <div class="company">
+          <h3>BHAGYASHRI TRANSPORT ENTERPRISES (I) PRIVATE LIMITED
+          </h3>
+          <p><ion-icon name="book-outline"></ion-icon> About:Wholesale of raw milk & dairy products
+            .</p>
+            <p><ion-icon name="wallet-outline"></ion-icon> Paid up:25000
+            </p>
+          <p><ion-icon name="location-outline"></ion-icon> Location: Maharashtra
+          </p>
+          <p><ion-icon name="at-outline"></ion-icon>Website:chavannishant69@gmail.com
+            <a href="">chavannishant69@gmail.com
+            </a></p>
+        </div>
+
+        <div class="company">
+          <h3>DHANODAY AGRO PRODUCER COMPANY LIMITED
+          </h3>
+          <p><ion-icon name="book-outline"></ion-icon> About:Agricultural activities on a fee or contract basis (preparation of fields, establishing a crop, treatment of crops, crop spraying, trimming of fruit trees and vines, transplanting of rice, thinning of beets, harvesting, pest control in connection with agriculture etc.)
+            .</p>
+            <p><ion-icon name="wallet-outline"></ion-icon> Paid up:10000
+            </p>
+          <p><ion-icon name="location-outline"></ion-icon> Location:Maharashtra
+          </p>
+          <p><ion-icon name="at-outline"></ion-icon>Website: <a href="ghodake.bapu@gmail.com
+            ">ghodake.bapu@gmail.com
+          </a></p>
+        </div>
+
+
+        <div class="company">
+          <h3>SPEED TECHNO TRAINING INSTITUTE PRIVATE LIMITED</h3>
+          <p><ion-icon name="book-outline"></ion-icon> About:Other educational services n.e.c.
+          </p>
+            <p><ion-icon name="wallet-outline"></ion-icon> Paid up:100000
+            </p>
+          <p><ion-icon name="location-outline"></ion-icon> Location:Chandigarh
+          </p>
+          <p><ion-icon name="at-outline"></ion-icon>Website: <a href="Info@speedtechnotraining.com
+            ">Info@speedtechnotraining.com
+          </a></p>
+        </div>
+
+        <div class="company">
+          <h3>BAIA TRADE PRIVATE LIMITED</h3>
+          <p><ion-icon name="book-outline"></ion-icon> About:Manufacture of purse, ladies? handbags, artistic leather presented articles and novelties
+          </p>
+            <p><ion-icon name="wallet-outline"></ion-icon> Paid up:100000
+            </p>
+          <p><ion-icon name="location-outline"></ion-icon> Location:Karnataka
+          </p>
+          <p><ion-icon name="at-outline"></ion-icon>Website: <a href="patel.sushumna@gmail.com
+            ">patel.sushumna@gmail.com
+          </a></p>
+        </div>
+
+        <div class="company">
+          <h3>SARI CONSULTANCY SERVICES PRIVATE LIMITED
+          </h3>
+          <p><ion-icon name="book-outline"></ion-icon> About:Educational support services
+          </p>
+            <p><ion-icon name="wallet-outline"></ion-icon> Paid up:100000
+            </p>
+          <p><ion-icon name="location-outline"></ion-icon> Location: West Bengal
+          </p>
+          <p><ion-icon name="at-outline"></ion-icon>Website: <a href="sahilgarg2816@gmail.com
+            ">sahilgarg2816@gmail.com
+          </a></p>
+        </div>
+
+        <div class="company">
+          <h3>SAI RAM CONSTRUCTION AND OUTSOURCING (OPC) PRIVATE LIMITED
+          </h3>
+          <p><ion-icon name="book-outline"></ion-icon> About:Human resources provision and management of human resources functions
+            .</p>
+            
+            <p><ion-icon name="wallet-outline"></ion-icon> Paid up:50000
+            </p>
+          <p><ion-icon name="location-outline"></ion-icon> Location: Madhya Pradesh
+          </p>
+          <p><ion-icon name="at-outline"></ion-icon>Website: <a href="sairamconstrution23@gmail.com
+            ">sairamconstrution23@gmail.com
+          </a></p>
+        </div>
+
+        <div class="company">
+          <h3>BHOJANE BROTHER'S PRODUCTS PRIVATE LIMITED
+          </h3>
+          <p><ion-icon name="book-outline"></ion-icon> About:Manufacture  of  moulded  industrial  accessories  of  plastics electrical insulating fittings of plastics]
+          </p>
+            <p><ion-icon name="wallet-outline"></ion-icon> Paid up:100000
+            </p>
+          <p><ion-icon name="location-outline"></ion-icon> Location: Maharashtra</p>
+          <p><ion-icon name="at-outline"></ion-icon>Website: <a href="BHOJANEMAHESH0@GMAIL.COM
+            ">BHOJANEMAHESH0@GMAIL.COM
+          </a></p>
+        </div>
+
+        <div class="company">
+          <h3>RAIMANGAL MICRO SERVICE FOUNDATION
+          </h3>
+          <p><ion-icon name="book-outline"></ion-icon> About:Other human health activities n.e.c. (including independent ambulance activities)
+          </p>
+            <p><ion-icon name="wallet-outline"></ion-icon> Paid up:100000
+            </p>
+          <p><ion-icon name="location-outline"></ion-icon> Location:West Bengal
+
+          </p>
+          <p><ion-icon name="at-outline"></ion-icon>Website: <a href="sanjoydhara212@gmail.com
+            ">sanjoydhara212@gmail.com
+          </a></p>
+        </div>
+
+        <div class="company">
+          <h3>PERTINENCE QTECH SOLUTIONS (OPC) PRIVATE LIMITED
+          </h3>
+          <p><ion-icon name="book-outline"></ion-icon> About:Other information technology and computer service activities n.e.c
+          </p>
+            <p><ion-icon name="wallet-outline"></ion-icon> Paid up:100000
+            </p>
+          <p><ion-icon name="location-outline"></ion-icon> Location:Telangana
+          </p>
+          <p><ion-icon name="at-outline"></ion-icon>Website: <a href="vbaireddy495@gmail.com">
+            "vbaireddy495@gmail.com"</a></p>
+        </div>
+
+        <div class="company">
+          <h3>INDUSREVO ENGINEERING PRIVATE LIMITED
+          </h3>
+          <p><ion-icon name="book-outline"></ion-icon> About:Architectural and engineering activities and related technical consultancy
+          </p>
+            <p><ion-icon name="wallet-outline"></ion-icon> Paid up:100000
+            </p>
+          <p><ion-icon name="location-outline"></ion-icon> Location:Karnataka
+          </p>
+          <p><ion-icon name="at-outline"></ion-icon>Website: <a href="vernekar.abhinav@live.com">vernekar.abhinav@live.com</a></p>
+        </div>
+
+
+        <!-- Add more company information divs as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us at support@example.com</p>
+  </footer>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="script.js"></script>
+
+</html>

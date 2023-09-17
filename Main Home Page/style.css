@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: auto;
+}
+.btn0 {
+  padding-left: 5px;
+  padding-right: 5px;
+  outline: none;
+  border: none;
+}
+
+.btn1 {
+  padding-left: 5px;
+  padding-right: 5px;
+  outline: none;
+  border: none;
+}
+
+.main {
+  background: url("img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+}
+.main h1 {
+  font-size: 50px;
+  /*c
+                olor:rgb(7,7,78);*/
+}
+.main input {
+  padding: 9px;
+  border: none;
+  outline: none;
+}
+.btn2 {
+  background-color: lightskyblue;
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+.btn2:hover {
+  background-color: blue;
+  transition: all 0.4s;
+}
+.category .card:hover {
+  color: blue;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn3 {
+  width: 51%;
+  height: 35px;
+  border: 1px solid black;
+}
+.btn3:hover {
+  background-color: blue;
+}
+.resume {
+  background: url("img24.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+/*.b1:hover{
+               color:black;
+               border:1px solid black;
+}*/
+
+/* main-css */
+
+#iqbal {
+    margin: auto;
+    width: 90%;
+    
+}
+
+#iqbal>p {
+    font-size: 1.2rem;
+}
+
+#iqbal>p>a {
+    float: right;
+    color: #008BDC;
+    font-weight: 600;
+}
+
+#iqbal>h1>img {
+    width: 70px;
+}
+
+.citycat{
+    margin-bottom:100px;
+}
+
+.citycat>div {
+    display: flex;
+
+
+}
+
+
+.iq {
+   border-radius: 100px;
+   color: #008BDC;
+
+}
+
+.iq>p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.iq>img {
+    width: 155px;
+}

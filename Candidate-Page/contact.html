@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        :root {
+
+          --primarycolor: #362FD9;
+  --secondarycolor: blue;
+      --fontcolor: #1e1e1e;
+      --whitecolor: #fff;
+      --greycolor: #e7e7e7;
+      --drakGreyColor: #5f5f5f;
+      --sofPurple: #e7e8ff;
+      --softBlue: #c3e1ff;
+      --softYellow: #fff5cc;
+      --softRed: #ffcbc8;
+    }
+    .sidebar {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color: var(--primarycolor);
+      color: var(--whitecolor);
+      position: fixed;
+      left: 0;
+    }
+
+    .logo {
+      letter-spacing: 2;
+      font-size: 50px; /**/
+    }
+
+
+  .menus {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+.menus a {
+    display: flex;
+    align-items: center;
+    color: var(--whitecolor);
+    text-decoration: none;
+    font-size: 30px;/**/
+  }
+  menus a.active{ 
+    font-size: 50px;
+  }
+
+  .menus ion-icon {
+    margin-right: 0.5rem;
+  }
+
+  .menus a:hover {
+    color: var(--secondarycolor);
+  } 
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: var(--whitecolor);
+    color: var(--fontcolor);
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+  }
+
+  .profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .profile:hover {
+    background-color: var(--secondarycolor);
+  }
+
+  .profile-name p {
+    font-size: 12px;/**/
+  }
+
+
+
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+
+    }
+  .search {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-color: var(--whitecolor);
+ 
+  
+  } 
+  .menu-bar {
+    background-color: var(--whitecolor);
+    padding: 0.5rem;
+    border-radius: 20px;
+    display: none;
+  
+  
+  }
+
+  .search input {
+    width:90%;
+    border: none;
+    font-size: 25px; /*Reduced the font size to fit better*/
+  }
+
+  .btn-search {
+  
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 5%;
+    border: none;
+    background-color: var(--primarycolor);
+    color: var(--whitecolor);
+    font-size: 18px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+  
+  }
+
+  .btn-search:hover {
+    background-color: var(--secondarycolor);
+    color: var(--fontcolor);
+  }
+
+  main {
+      padding: 2rem;
+      background-color: var(--sofPurple);
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      width: calc(20%- 100% - 20%);
+      padding-left:25%
+    }
+
+
+    .container {
+    
+        
+            max-width: 9000px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-right:300px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: horizontal;
+        }
+
+        textarea :hover{
+            background-color: var(--drakGreyColor);
+        }
+
+        button {
+            background-color: #4c50d3;
+            color:var(--sofPurple);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: rgba(99, 99, 99, 0.2);
+        }
+
+        button:hover {
+            background-color: #3a3fb2;
+        }
+
+        .contact p{
+            font-size: 25px;
+            
+        }
+        .contact h3{
+            font-size: 25px;
+        }
+        .contact li{
+            font-size:25px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1 class="logo">Neuvera Jobs.</h1>
+        
+        <div class="menus">
+            <a class="home" href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a>
+            <a href="Our_services.html"><ion-icon name="newspaper-outline"></ion-icon> Our Services</a>
+            <a href="Company.html"><ion-icon name="server-outline"></ion-icon> Company</a>
+            <a href="#"><ion-icon name="bookmarks-outline"></ion-icon> Bookmarks</a>
+            <a href="contact.html"><ion-icon name="mail-unread-outline"></ion-icon> Contact us</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a>
+        </div>
+        <div class="profile">
+          <img class="profile-img" src="images/profile.png" alt="">
+          <div class="profile-name">
+            <h4>Albert Einstein</h4>
+            <p>Data science</p>
+          </div>
+        </div>
+      </div>
+    
+      <main>
+          <div class="main-header">
+            <ion-icon class="menu-bar"name="menu-outline"></ion-icon>
+            <div class="search">
+              <input type="text" placeholder="Search your best job here....">
+              <button class="btn-search"><ion-icon name="search-outline"></ion-icon></button>
+            </div>
+            </div>
+
+            <div class="contact">
+                <p>Thank you for choosing to connect with us. Your communication is valuable to us, and we look forward to serving you better through our Contact Page. If you prefer other means of communication, you can also find our contact details below.</p>
+                <h3>Visit Us Through:</h3>
+                    <ul>
+                        <li><ion-icon name="mail-open-outline"></ion-icon> Email: <a href="connect@nueverainfotech.com">connect@nueverainfotech.com</a></li>
+                        <li><ion-icon name="call-outline"></ion-icon> Phone: <a href="+1 (555) 123-4567">+1 (555) 123-4567</a> </li>
+                        <li><ion-icon name="home-outline"></ion-icon> Address: 123 Main Street, Anytown, USA</li>
+                    </ul>
+            </div>
+            
+
+            <div class="container">
+                <h2>Query/Suggestion</h2>
+                <form action="process_form.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            
+    
+    
+    
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="script.js"></script>
+</html>

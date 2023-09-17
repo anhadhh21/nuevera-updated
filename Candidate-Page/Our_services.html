@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Jobs</title>
+    <style>
+            :root {
+      --primarycolor: #4c50d3;
+      --secondarycolor: #ffce00;
+      --fontcolor: #1e1e1e;
+      --whitecolor: #fff;
+      --greycolor: #e7e7e7;
+      --drakGreyColor: #5f5f5f;
+      --sofPurple: #e7e8ff;
+      --softBlue: #c3e1ff;
+      --softYellow: #fff5cc;
+      --softRed: #ffcbc8;
+    }
+    .sidebar {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color: var(--primarycolor);
+      color: var(--whitecolor);
+      position: fixed;
+      left: 0;
+    }
+
+    .logo {
+      letter-spacing: 2;
+      font-size: 50px; /**/
+    }
+
+
+  .menus {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+.menus a {
+    display: flex;
+    align-items: center;
+    color: var(--whitecolor);
+    text-decoration: none;
+    font-size: 30px;/**/
+  }
+  menus a.active{ 
+    font-size: 50px;
+  }
+
+  .menus ion-icon {
+    margin-right: 0.5rem;
+  }
+
+  .menus a:hover {
+    color: var(--secondarycolor);
+  } 
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: var(--whitecolor);
+    color: var(--fontcolor);
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+  }
+
+  .profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .profile:hover {
+    background-color: var(--secondarycolor);
+  }
+
+  .profile-name p {
+    font-size: 12px;/**/
+  }
+
+
+
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+
+    }
+  .search {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-color: var(--whitecolor);
+ 
+  
+  } 
+  .menu-bar {
+    background-color: var(--whitecolor);
+    padding: 0.5rem;
+    border-radius: 20px;
+    display: none;
+  
+  
+  }
+
+  .search input {
+    width:90%;
+    border: none;
+    font-size: 25px; /*Reduced the font size to fit better*/
+  }
+
+  .btn-search {
+  
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 5%;
+    border: none;
+    background-color: var(--primarycolor);
+    color: var(--whitecolor);
+    font-size: 18px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+  
+  }
+
+  .btn-search:hover {
+    background-color: var(--secondarycolor);
+    color: var(--fontcolor);
+  }
+
+
+   main {
+      padding: 2rem;
+      background-color: var(--sofPurple);
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      width: calc(20%- 100% - 20%);
+      padding-left:25%
+    }
+
+    section p{
+      font-size: 22px;
+      padding: 0.5rem;
+      
+
+    }
+
+    .services-container{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      /* three columns per row */
+      grid-gap: 2rem;
+    }
+
+    .services{
+      border: 0.5px solid #d4d4d4;
+      border-radius: 20px;
+      padding: 1rem;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background-color: #ACBCFF;
+      justify-content: center;
+
+    }
+
+    .services-container :hover{
+      background-color: #F8E8EE;
+    }
+
+    .services h3 {
+      margin-top: 0;
+      font-size: 20px;
+      justify-content: center;
+      
+
+    }
+    .services p {
+      margin: 0;
+      font-size: 20px;
+      
+    text-align: justify;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1 class="logo">Neuvera Jobs.</h1>
+        
+        <div class="menus">
+            <a class="home" href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a>
+            <a href="Our_services.html"><ion-icon name="newspaper-outline"></ion-icon>Our services</a>
+            <a href="Company.html"><ion-icon name="server-outline"></ion-icon> Company</a>
+            <a href="#"><ion-icon name="bookmarks-outline"></ion-icon> Bookmarks</a>
+            <a href="contact.html"><ion-icon name="mail-unread-outline"></ion-icon> Contact us</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a>
+        </div>
+        <div class="profile">
+          <img class="profile-img" src="images/profile.png" alt="">
+          <div class="profile-name">
+            <h4>Albert Einstein</h4>
+            <p>Data science</p>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+      <main>
+        <div class="main-header">
+          <ion-icon class="menu-bar"name="menu-outline"></ion-icon>
+          <div class="search">
+            <input type="text" placeholder="Search your best job here....">
+            <button class="btn-search"><ion-icon name="search-outline"></ion-icon></button>
+          </div>
+        </div>
+
+
+        <section>
+          <p style="font-style: oblique;"><b>At Neuvera Jobs, we take pride in connecting job seekers with their dream careers and helping companies find the perfect candidates for their open positions. Our mission is to bridge the gap between talented individuals and exceptional opportunities, empowering both job seekers and employers to reach their full potential.</b></p>
+          <h2 style="font-size: 25px;color:var(--drakGreyColor)">Our Best Services</h2>
+          
+          <div class="services-container">
+
+            <div class="services">
+              
+              <h3><ion-icon name="checkmark-circle-outline"></ion-icon> Job Listings</h3>
+              <p>Discover a diverse array of job listings from top companies across various industries. Our platform is your gateway to a wide range of exciting career opportunities. Whether you are an entry-level candidate or a seasoned professional, you'll find jobs that match your skills and aspirations.</p>
+            </div>
+
+            <div class="services">
+              <h3><ion-icon name="checkmark-circle-outline"></ion-icon> Job Alerts</h3>
+              <p>Never miss an opportunity with our personalized job alerts. Sign up for job alerts, and we'll notify you whenever new positions that match your preferences are posted. Stay ahead of the competition and be the first to apply for your dream job.</p>
+            </div>
+
+            <div class="services">
+              <h3><ion-icon name="checkmark-circle-outline"></ion-icon> Company Profiles</h3>
+              <p>Get an inside look at potential employers through our detailed company profiles. Learn about their values, company culture, and employee benefits. Make informed decisions about your career path and find the right company that aligns with your goals.</p>
+            </div>
+
+            <div class="services">
+              <h3><ion-icon name="checkmark-circle-outline"></ion-icon> Inverview Preparation</h3>
+              <p>Ace your interviews with our interview preparation resources. From commonly asked questions to tips on how to make a lasting impression, we've got you covered. Be confident and ready to impress during every interview.</p>
+             </div> 
+
+             <div class="services">
+              <h3><ion-icon name="checkmark-circle-outline"></ion-icon> Job Application Tracking</h3>
+              <p>Keep track of all your job applications in one place. Our platform allows you to manage and monitor the status of your applications easily. Stay organized throughout your job search.</p>
+             </div>
+
+             <div class="services">
+              <h3><ion-icon name="checkmark-circle-outline"></ion-icon> Career Resources</h3>
+              <p>Access a wealth of career resources to support your professional growth. Stay informed about the latest industry trends, get career advice, and learn from experts in your field. Our resources will empower you to navigate your career journey successfully.</p>
+            </div>
+
+             <div class="services">
+              <h3><ion-icon name="checkmark-circle-outline"></ion-icon> Recruitment Solutions</h3>
+              <p>Finding the right talent for your organization is crucial. Our recruitment solutions provide efficient and effective ways to identify and connect with top candidates. Save time and resources while building a strong team</p>
+             </div>
+
+             <div class="services">
+              <h3><ion-icon name="checkmark-circle-outline"></ion-icon> Personalized Support:</h3>
+              <p>We are dedicated to providing exceptional customer support to both job seekers and employers. Our team is available to address any inquiries and provide guidance throughout your journey.</p>
+             </div>
+
+            
+
+
+
+
+              
+            
+
+            
+
+
+
+          </div>
+        
+        
+        
+        </section>
+
+
+        </main>
+
+
+    
+</body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="script.js"></script>
+</html>

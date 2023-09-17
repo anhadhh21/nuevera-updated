@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Dashboard</title>
+    <link rel="stylesheet" href="recruiter.css">
+</head>
+<body>
+    <!-- Dashboard Header -->
+    <header>
+        <h1>Welcome, [Recruiter Name]</h1>
+        <a href="#">Sign Out</a>
+    </header>
+
+    <!-- Dashboard Content -->
+    <main class="dashboard">
+        <section class="overview">
+            <h2>Overview</h2>
+            <div class="active-jobs">
+                <p>Active Job Postings: [Number]</p>
+            </div>
+            <div class="applicant-stats">
+                <p>Total Applicants: [Number]</p>
+            </div>
+            <div class="pending-actions">
+                <p>Pending Actions: [Number]</p>
+            </div>
+        </section>
+
+        <section class="navigation-panel">
+            <h2>Quick Navigation</h2>
+            <ul>
+                <li><a href="#">Manage Job Postings</a></li>
+                <li><a href="#">View Applicants</a></li>
+                <li><a href="#">Billing & Subscription</a></li>
+                <li><a href="#">Account Settings</a></li>
+            </ul>
+        </section>
+    </main>
+
+    
+    <!-- Applicant Tracking Section -->
+    <section class="applicant-tracking">
+        <h1>Applicant Tracking</h1>
+        
+        <!-- Sorting and Filtering Options -->
+        <div class="sorting-options">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="date">Application Date</option>
+                <option value="name">Applicant Name</option>
+                <option value="job">Job Title</option>
+            </select>
+            <label for="filter">Filter by Job:</label>
+            <select id="filter">
+                <option value="all">All Jobs</option>
+                <option value="job1">Job 1</option>
+                <option value="job2">Job 2</option>
+            </select>
+        </div>
+
+        <!-- List of Applicants -->
+        <ul class="applicant-list">
+            <li class="applicant">
+                <h2>Applicant Name 1</h2>
+                <p>Job Title: Job 1</p>
+                <p>Application Date: Jan 1, 2023</p>
+                <a href="#">Resume</a>
+                <a href="#">Cover Letter</a>
+            </li>
+            <li class="applicant">
+                <h2>Applicant Name 2</h2>
+                <p>Job Title: Job 2</p>
+                <p>Application Date: Feb 15, 2023</p>
+                <a href="#">Resume</a>
+                <a href="#">Cover Letter</a>
+            </li>
+            <!-- Add more applicant entries as needed -->
+        </ul>
+    </section>
+
+    <!-- Recruiter Resources Section -->
+    <section class="recruiter-resources">
+        <h1>Recruiter Resources</h1>
+        
+        <!-- Resource Links -->
+        <ul class="resource-list">
+            <li><a href="#">Creating Compelling Job Descriptions</a></li>
+            <li><a href="#">Effective Interview Techniques</a></li>
+            <li><a href="#">Hiring Process Optimization</a></li>
+        </ul>
+    </section>
+
+
+    <!-- Footer Section (you can add the footer here) -->
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+</html>

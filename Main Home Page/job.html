@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Left Panel Example</title>
+    <link rel="stylesheet" href="job.css">   
+</head>
+<body>
+    <div class="left-panel">
+        <ul>
+            <li><a id="home-link" class="component" onclick="showContent('home')">Home</a></li>
+            <li><a id="contact-link" class="component" onclick="showContent('contact')">Contact</a></li>
+            <li><a id="info-link" class="component" onclick="showContent('info')">Information</a></li>
+            <li><a id="guide-link" class="component" onclick="showContent('guide')">Guide</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div id="home" class="content-section">
+            <h2>Welcome to the Home Page</h2>
+            
+            <p>Nulla adipisicing voluptate enim officia fugiat tempor deserunt. Elit consequat cupidatat est reprehenderit quis. Eiusmod mollit qui nostrud nisi eu pariatur est.</p>
+
+            <p>Adipisicing consectetur laborum tempor do. Ea do sunt elit eu sunt magna deserunt. Irure eu eu eu sint. Irure dolor commodo qui laboris amet.</p>
+            
+            <p>Aute proident culpa exercitation proident veniam ea reprehenderit. Aute sunt reprehenderit aute commodo in do in est voluptate. Mollit ad enim duis ad. Culpa pariatur incididunt sunt eiusmod mollit commodo sunt dolore. Ad ullamco ipsum in duis culpa officia sunt sint nulla.</p>
+            
+            <p>Laborum labore commodo sint exercitation. Duis mollit est quis laborum velit. Do dolore irure ea incididunt. Commodo laboris aute et occaecat reprehenderit sunt enim. Sint cupidatat quis incididunt fugiat cupidatat.</p>
+            
+            <p>Occaecat aliquip laborum pariatur ad eu deserunt. Non ullamco velit labore in fugiat magna mollit est mollit. Aliqua tempor deserunt irure ex in. Nulla cupidatat in pariatur fugiat est nulla voluptate in reprehenderit.</p>
+            <p>This is the content of the Home page.</p>
+        </div>
+       
+       <!-- contact page start from here -->
+        <div id="contact" class="content-section">
+            <h1>WELCOME TO CONTACT PAGE</h1>
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+     
+        <div id="info" class="content-section">
+          
+          <!-- start vhere info page page -->
+            <h2>Information</h2>
+            <p>This is the information page.</p>
+            <div class="about-section">
+                <h1> Information About Us   </h1>
+                <p>Some text about who we are and what we do.</p>
+                <p>Resize the browser window to see that this page is responsive by the way.</p>
+              </div>
+              
+              <h2 style="text-align:center">Our Team</h2>
+              <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img src="" alt="" style="width:100%  " style="height: fit-content">
+                    <div class="container">
+                      <h2>Pulkit Methaniya</h2>
+                      <p class="title">Web Developer</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                      <p>guptapulkit71@gmail.com</p>
+                      <p><button class="button">Contact</button></p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <img src="" alt="" style="width:100%">
+                    <div class="container">
+                      <h2>Pulkit Methaniya</h2>
+                      <p class="title">Art Director</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                      <p>guptapulkit71@gmail.com</p>
+                      <p><button class="button">Contact</button></p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <img src="" alt="" style="width:100%">
+                    <div class="container">
+                      <h2>Pulkit Methaniya</h2>
+                      <p class="title">Designer</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                      <p>guptapulkit71@gmail.com</p>
+                      <p><button class="button">Contact</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- endhere -->
+        </div>
+        <div id="guide" class="content-section">
+            <h2>Guide</h2>
+            <p>This is the guide page.</p>
+        </div>
+    </div>
+    <script src="job.js"></script>
+</body>
+</html>

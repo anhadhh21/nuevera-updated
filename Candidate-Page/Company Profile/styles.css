@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: #f0f0f0; 
+ 
+}
+
+.search-job{
+    background-color:#007fff;
+
+   border-radius: 25px;
+  padding: 10px 20px;
+   margin: 30px auto;
+   display: flex;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  
+}
+.key{
+    margin: 20px 40px;
+    border: none;
+    width: 35%;   
+}
+.key input{
+    padding: 8px 25 px;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+}
+.company, .Location {
+    margin: 20px 20px;
+    width: 30%;
+}
+
+.search-job .button{
+ 
+    padding: 8px 18px;
+    background-color:#000000;
+    color: white;
+    border: 0;
+    font-size: 15px;
+    margin: 20px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+
+}
+.search-job .button:hover{
+    transform: scale(1.1) translateY(1px);
+    transition: 0.4s;
+    background-color:white;
+    color:#000000;
+    font-weight: 700;
+}
+.nav-item a{
+    text-decoration: none;
+}
+.nav-item h2{
+    color: #000000;
+    font-size: 25px;
+}
+.d-flex .button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.d-flex .button:hover{
+    background-color: #fff;
+    color: #000000;
+    font-weight: 700;
+    transform: scale(1.04) translateY(1px);
+    transition: 0.4s;
+}
+.d-flex a {
+text-decoration: none;
+}
+.fa-heart{
+    margin-right: 20px;
+}
+.job-item{
+    background-color: #d8f9ff;
+    color: #000000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+.job-item:hover{
+    transform: scale(1.05) translateY(1px);
+    transition: 0.4s;
+    background-color:#007FFF;   
+}
+.tab-class h1{
+    color: #000000;
+  
+    text-align: center;
+    margin-left: 50px;  
+}
+.hr{
+    background-color:#000000;
+    width: 300px;
+    height: 2px;
+    margin-left: 20px 0;  
+}
+
+.button1{
+    background-color: #000000;
+    color: white;
+
+    padding: 6px 15px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.button1:hover{
+    background-color:#fff;
+    color: #000000;
+    font-weight: 700;
+    transform: scale(1.05) translateY(1px);
+    transition: 0.4s;
+}
+#tab-2, #tab-3, #tab-4 {
+  display: none;
+
+}
+
+.browseit{
+    border: 0;
+    background-color: #007fff;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+    padding: 10px 20px;
+  
+}
+.browseit a{
+    color: white;
+    font-size: 18px;
+
+}
+.browseit:hover{
+
+    background-color:#0055B3;
+    color: white;
+    transform: scale(1.05) translateY(1px);
+    transition: 0.4s;
+
+}
+
+.scrollspy-example{
+height: 30%;
+max-height: 250px;
+width: 100%;
+    overflow-y: auto;
+}
+.information{
+    display: flex;
+    flex-wrap: wrap;
+}
+.information li{
+    padding: 6px;
+    flex: 1;
+}
+.page{
+  float: right;
+}
+.navbar .navbar-brand{ 
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-item a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.scrollspy-example p{
+    font-weight: 600;
+}
+.card-body{
+    background: #fff;
+}
+nav{
+    background: #fff;
+}
+
+
