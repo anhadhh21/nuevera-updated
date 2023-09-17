@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Resume Builder</title>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white p-4">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center">
+          <img src="your-logo.png" alt="Job Portal Logo" class="h-8 w-8" />
+          <nav class="ml-4">
+            <ul class="flex space-x-4">
+              <li>
+                <a href="landing.html" class="text-blue-500 hover:text-blue-700"
+                  >Home</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="/postAjob.html"
+                  class="text-blue-500 hover:text-blue-700"
+                  >Post a Job</a
+                >
+              </li>
+              <li>
+                <a href="home.html" class="text-blue-500 hover:text-blue-700"
+                  >Recruiter Dashboard</a
+                >
+              </li>
+              <li>
+                <a href="aboutus.html" class="text-blue-500 hover:text-blue-700"
+                  >About Us</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="applicanttracking.html"
+                  class="text-blue-500 hover:text-blue-700"
+                  >Applications</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <a href="#" class="text-blue-500 hover:text-blue-700"
+            >Recruiter Sign-In</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-semibold mb-4">Resume Builder</h1>
+      <!-- ... Previous HTML code ... -->
+      <form id="resumeForm" class="bg-white p-6 rounded shadow">
+        <label for="firstName" class="block mb-2 font-semibold"
+          >First Name</label
+        >
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          class="w-full p-2 border rounded mb-4"
+          required
+        />
+
+        <label for="lastName" class="block mb-2 font-semibold">Last Name</label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          class="w-full p-2 border rounded mb-4"
+          required
+        />
+
+        <label for="email" class="block mb-2 font-semibold">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="w-full p-2 border rounded mb-4"
+          required
+        />
+
+        <label for="phone" class="block mb-2 font-semibold">Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="w-full p-2 border rounded mb-4"
+          required
+        />
+
+        <!-- Education Section -->
+        <h2 class="text-lg font-semibold mb-2">Education</h2>
+        <label for="educationDegree" class="block mb-2 font-medium"
+          >Degree</label
+        >
+        <input
+          type="text"
+          id="educationDegree"
+          name="educationDegree"
+          class="w-full p-2 border rounded mb-2"
+          required
+        />
+
+        <label for="educationSchool" class="block mb-2 font-medium"
+          >School</label
+        >
+        <input
+          type="text"
+          id="educationSchool"
+          name="educationSchool"
+          class="w-full p-2 border rounded mb-2"
+          required
+        />
+
+        <label for="educationDate" class="block mb-2 font-medium">Date</label>
+        <input
+          type="text"
+          id="educationDate"
+          name="educationDate"
+          class="w-full p-2 border rounded mb-4"
+          required
+        />
+
+        <!-- Work Experience Section -->
+        <h2 class="text-lg font-semibold mb-2">Work Experience</h2>
+        <label for="workTitle" class="block mb-2 font-medium">Title</label>
+        <input
+          type="text"
+          id="workTitle"
+          name="workTitle"
+          class="w-full p-2 border rounded mb-2"
+          required
+        />
+
+        <label for="workCompany" class="block mb-2 font-medium">Company</label>
+        <input
+          type="text"
+          id="workCompany"
+          name="workCompany"
+          class="w-full p-2 border rounded mb-2"
+          required
+        />
+
+        <label for="workDate" class="block mb-2 font-medium">Date</label>
+        <input
+          type="text"
+          id="workDate"
+          name="workDate"
+          class="w-full p-2 border rounded mb-2"
+          required
+        />
+
+        <label for="workDescription" class="block mb-2 font-medium"
+          >Description</label
+        >
+        <textarea
+          id="workDescription"
+          name="workDescription"
+          class="w-full p-2 border rounded mb-4"
+          required
+        ></textarea>
+
+        <button
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+        >
+          Generate Resume
+        </button>
+      </form>
+      <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-semibold mb-4">Resume Builder</h1>
+        <a href="resume.html" class="text-blue-500 hover:underline"
+          >View Generated Resume</a
+        >
+      </div>
+
+      <div id="preview" class="mt-8"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
