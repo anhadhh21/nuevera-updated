@@ -196,8 +196,8 @@ filter: blur(20px);
                                 </button>
                                 <ul class="dropdown-menu">
                                     <!-- sign in.html -->
-                                  <li><a class="dropdown-item btn btn-outline-light" href="/Candidate-Page/index.html"><p class="text-primary">Candidate</p></a></li>
-                                  <li><a class="dropdown-item btn btn-outline-light" href="/Employer Page/home.html"><p class="text-primary">Employer</p></a></li>
+                                  <li><a id="candidate-button" class="dropdown-item btn btn-outline-light" ><p class="text-primary ">Candidate</p></a></li>
+                                  <li><a id="employee-button" class="dropdown-item btn btn-outline-light" ><p class="text-primary">Employer</p></a></li>
                                 </ul>
                             </div>
                           </form>   
@@ -756,7 +756,40 @@ filter: blur(20px);
           </div> 
           </div>
           <script src="style.js"></script>  
+         
     </body>
+    <script>
+
+
+
+    const token=localStorage.getItem('token');
+  
+    const auth=(location)=>{
+        if(token){
+            window.location.href=location
+        }else{
+            window.location.href="/Candidate-Page/sign in.html"
+        }
+    }
+
+const candidateButton=document.getElementById('candidate-button')
+const employeeButton=document.getElementById('employee-button')
+
+
+//send to login Page
+candidateButton.addEventListener('click',()=>{
+    auth('/Candidate-Page/index.html');
+})
+
+employeeButton.addEventListener('click',()=>{
+    auth('/Employer Page/home.html');
+})
+
+
+
+
+
+</script>
 
 </html>
                 

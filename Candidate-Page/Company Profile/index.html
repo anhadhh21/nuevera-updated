@@ -1,1303 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/2892cfcd4a.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/2892cfcd4a.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="
-    https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.umd.min.js
-    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.umd.min.js"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="search-job text-center">
-       
-            <div class="company">
-                <select class="form-select border-0 searchbutton">
-                  <option selected>Recent keywords</option>
-                  <option value="1">Category 1</option>
-                  <option value="2">Category 2</option>-
-                  <option value="3">Category 3</option>
-              </select> </div>
       <div class="company">
-      <select class="form-select border-0 searchbutton">
-        <option selected>Company</option>
-        <option value="1">Category 1</option>
-        <option value="2">Category 2</option>-
-        <option value="3">Category 3</option>
-    </select> </div>
-    <div class="Location ">
-    <select class="form-select border-0 searchbutton">
-        <option selected>Location</option>
-        <option value="1">Category 1</option>
-        <option value="2">Category 2</option>-
-        <option value="3">Category 3</option>
-    </select>
-    </div>
-    <div class="findjob">
-      <input type="button" class=" button" value="Find Job">
-</div>
-
-     </div>
-     
-<!-- Jobs Start -->
-<div class="container-xxl py-5">
-  <div class="container">
-    
-      <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
-          <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
-              <li class="nav-item">
-                  <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
-                      <h1 class="mt-n1 mb-0 job">Job Listing</h1>
-                     
-                  </a>
-                  <div class="hr"><div class="circle"></div></div>
-                 
-              </li>
-         
-            
-          </ul>
-          
-          <div class="tab-content">
-              <div id="tab-1" class="tab-pane fade show p-0 active">
-                  <div class="job-item p-4 mb-4">
-                      <div class="row g-4">
-                          <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                              <img class="flex-shrink-0 img-fluid border rounded" src="company-1.jpg" alt="" style="width: 80px; height: 80px;">
-                              <div class="text-start ps-4">
-                                  <h5 class="mb-3">Yatharth Enterprise (OPC) Private Limited</h5>
-                                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark  me-2"></i>Uttarakhand, INDIA</span>
-                                  <span class="text-truncate me-3"> ₹ 50k - 1 lac</span>
-                                  <p class="d-inline-flex gap-1">
-                                    <a class="button1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                      View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                                    </a>
-                                  
-                                  </p>
-                          
-                                  <div class="collapse" id="collapseExample">
-                                    <div class="card card-body">
-                                        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                            <a class="navbar-brand" href="#">Job Details</a>
-                                            <ul class="nav nav-pills">
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#scrollspyHeading1">Information</a>
-                                              </li>
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#scrollspyHeading2">Description</a>
-                                              </li>
-                                             
-                                            </ul>
-                                          </nav>
-                                          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                                        
-                                            <h4 id="scrollspyHeading1">Information</h4>
-                                            <div class="information">
-                                                <div class="info">
-                                        <ul>
-                                                <li> Company Status: Active</li>   <li> Service : Trading </li>
-                                            
-                                            </div>
-                                            <div class="mation">
-                                                <li> Class : Non-governmnet Company</li>   <li>  Category: One Person Company</li>
-                                            </div>
-                                            </div>
-                                            <h4 id="scrollspyHeading2">Description</h4>
-                                            <p> Activity Description: Trading</p>
-                                            <p>Retail sale via E-commerce.</p>
-                                            <p>C/OSRI HEM CHANDRA PANDEY, GANPATI COLONY, HIMMATPUR, Haldwani, Nainital, Uttarakhand, India - 263139</p>
-                                            <p>Contact with the company :- sscorporaterg@gmail.com</p>
-                                        </div></div></div>
-                               
-                                 
-                              </div>
-                          </div>
-                          <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                              <div class="d-flex mb-3">
-                                  <a class="me-3 heart" href=""><i class="far fa-heart text-dark"></i></a>
-                                  <a class="button" href="">Apply Now</a>
-                              </div>
-                              <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-                          </div>
-                         
-                            </div>
-                          </div>
-                    
-                  <div class="job-item p-4 mb-4">
-                      <div class="row g-4">
-                          <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                              <img class="flex-shrink-0 img-fluid border rounded" src="imgbin.jpg" alt="" style="width: 80px; height: 80px;">
-                              <div class="text-start ps-4">
-                                  <h5 class="mb-3">Nav Cargo Solutions Private Limited</h5>
-                                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Tamil Nadu, INDIA</span>
-                                  <span class="text-truncate me-3"> ₹ 1 lac - 1.5 lac</span>
-                                  <p class="d-inline-flex gap-1">
-                                    <a class="button1" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                      View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                                    </a>
-                                  
-                                  </p>
-                          
-                                  <div class="collapse" id="collapseExample2">
-                                    <div class="card card-body">
-                                        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                            <a class="navbar-brand" href="#">Job Details</a>
-                                            <ul class="nav nav-pills">
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#scrollspyHeading3">Information</a>
-                                              </li>
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#scrollspyHeading4">Description</a>
-                                              </li>
-                                             
-                                            </ul>
-                                          </nav>
-                                          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                                        
-                                            <h4 id="scrollspyHeading3">Information</h4>
-                                            <div class="information">
-                                                <div class="info">
-                                        <ul>
-                                                <li> Company Status: Active</li>   <li> Service : Warehousing </li>
-                                            
-                                            </div>
-                                            <div class="mation">
-                                                <li> Class : Non-governmnet Company</li>   <li>  Category: Private  </li>
-                                            </div>
-                                            </div>
-                                            <h4 id="scrollspyHeading4">Description</h4>
-                                            <p> Activity Description: Transport,storage and Communications </p>
-                                            <p>Activities of shipping cargo agents.</p>
-                                            <p>No.918/CB, (567/CB), E.V.R, Periyar Salai, Poonamallee, Maduravoyal, Chennai, Tamil Nadu, India - 600106</p>
-                                            <p>Contact with the company :- shreejaenterprises27@gmail.com</p>
-                                        </div></div></div>
-                              </div>
-                          </div>
-                          <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                              <div class="d-flex mb-3">
-                                  <a class="me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                                  <a class="button" href="">Apply Now</a>
-                              </div>
-                              <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="job-item p-4 mb-4">
-                      <div class="row g-4">
-                          <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                              <img class="flex-shrink-0 img-fluid border rounded" src="imgbin-1.jpg" alt="" style="width: 80px; height: 80px;">
-                              <div class="text-start ps-4">
-                                  <h5 class="mb-3">Bhagyashri Transport Enterprise (I) Private Limited</h5>
-                                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Maharashtra, INDIA</span>
-                                  <span class="text-truncate me-3"> ₹ 25k</span>
-                                  <p class="d-inline-flex gap-1">
-                                    <a class="button1" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                      View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                                    </a>
-                                  
-                                  </p>
-                          
-                                  <div class="collapse" id="collapseExample3">
-                                    <div class="card card-body">
-                                        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                            <a class="navbar-brand" href="#">Job Details</a>
-                                            <ul class="nav nav-pills">
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#scrollspyHeading5">Information</a>
-                                              </li>
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#scrollspyHeading6">Description</a>
-                                              </li>
-                                             
-                                            </ul>
-                                          </nav>
-                                          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                                        
-                                            <h4 id="scrollspyHeading5">Information</h4>
-                                            <div class="information">
-                                                <div class="info">
-                                        <ul>
-                                                <li> Company Status: Active</li>   <li> Service : Wholesale Trade </li>
-                                            
-                                            </div>
-                                            <div class="mation">
-                                                <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                            </div>
-                                            </div>
-                                            <h4 id="scrollspyHeading6">Description</h4>
-                                            <p> Activity Description: Finance</p>
-                                            <p>Wholesale of raw milk and dairy products.</p>
-                                            <p>2-C, KAMDHENU CHS LTD, SECTOR NO. 5, CHARKOP 1, Kandivlai West, Mumbai, Maharashtra, India - 400067</p>
-                                            <p>Contact with the company :- chavannishant69@gmail.com</p>
-                                        </div></div></div>
-                              </div>
-                          </div>
-                          <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                              <div class="d-flex mb-3">
-                                  <a class=" me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                                  <a class="button" href="">Apply Now</a>   
-                              </div>
-                              <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="job-item p-4 mb-4">
-                      <div class="row g-4">
-                          <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                              <img class="flex-shrink-0 img-fluid border rounded" src="img-2a.jpg" alt="" style="width: 80px; height: 80px;">
-                              <div class="text-start ps-4">
-                                  <h5 class="mb-3">Darshish Cropscience Private Limited </h5>
-                                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Rajasthan, INDIA</span>
-                                  <span class="text-truncate me-3"> ₹ 5lac</span>
-                                  <p class="d-inline-flex gap-1">
-                                    <a class="button1" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                      View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                                    </a>
-                                  
-                                  </p>
-                          
-                                  <div class="collapse" id="collapseExample4">
-                                    <div class="card card-body">
-                                        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                            <a class="navbar-brand" href="#">Job Details</a>
-                                            <ul class="nav nav-pills">
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#scrollspyHeading7">Information</a>
-                                              </li>
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#scrollspyHeading8">Description</a>
-                                              </li>
-                                             
-                                            </ul>
-                                          </nav>
-                                          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                                        
-                                            <h4 id="scrollspyHeading7">Information</h4>
-                                            <div class="information">
-                                                <div class="info">
-                                        <ul>
-                                                <li> Company Status: Active</li>   <li> Service : Trading </li>
-                                            
-                                            </div>
-                                            <div class="mation">
-                                                <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                            </div>
-                                            </div>
-                                            <h4 id="scrollspyHeading8">Description</h4>
-                                            <p> Activity Description: Trading</p>
-                                            <p>Retail sale vof seeds,fetilisers,pseticides,machinery equipments and hand tools.</p>
-                                            <p>HATHAI CHOWK KE PAAS,, PARWATPURA,
-                                                ,Ajmer, Ajmer, Rajasthan, India - 305002</p>
-                                            <p>Contact with the company :- darshishcropsciencepvtltd@gmail.com</p></div></div></div>
-                              </div>
-                          </div>
-                          <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                              <div class="d-flex mb-3">
-                                  <a class="me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                                  <a class="button" href="">Apply Now</a>
-                              </div>
-                              <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="job-item p-4 mb-4">
-                      <div class="row g-4">
-                          <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                              <img class="flex-shrink-0 img-fluid border rounded" src="img-3.jpg" alt="" style="width: 80px; height: 80px;">
-                              <div class="text-start ps-4">
-                                  <h5 class="mb-3">Speed Techno Training Institute Private Limited</h5>
-                                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Chandigarh, INDIA</span>
-                                  <span class="text-truncate me-3"> ₹ 1 lac</span>
-                                  <p class="d-inline-flex gap-1">
-                                    <a class="button1" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                      View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                                    </a>
-                                  
-                                  </p>
-                          
-                                  <div class="collapse" id="collapseExample5">
-                                    <div class="card card-body">
-                                        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                            <a class="navbar-brand" href="#">Job Details</a>
-                                            <ul class="nav nav-pills">
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#scrollspyHeading9">Information</a>
-                                              </li>
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#scrollspyHeading10">Description</a>
-                                              </li>
-                                             
-                                            </ul>
-                                          </nav>
-                                          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                                        
-                                            <h4 id="scrollspyHeading9">Information</h4>
-                                            <div class="information">
-                                                <div class="info">
-                                        <ul>
-                                                <li> Company Status: Active</li>   <li> Service : Community,personal and Social Services </li>
-                                            
-                                            </div>
-                                            <div class="mation">
-                                                <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                            </div>
-                                            </div>
-                                            <h4 id="scrollspyHeading10">Description</h4>
-                                            <p> Activity Description: Community,personal and Social Services</p>
-                                            <p> Other educational Services n.e.c.</p>
-                                            <p>S.C.O. 110-111, SECTOR 34-A, Chandigarh, Chandigarh, Chandigarh, India - 160022</p>
-                                            <p>Contact with the company :- chavannishant69@gmail.com</p></div></div></div>
-                              </div>
-                          </div>
-                          <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                              <div class="d-flex mb-3">
-                                  <a class=" me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                                  <a class="button" href="">Apply Now</a>
-                              </div>
-                              <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-                          </div>
-                      </div>
-                  </div>
-                 <button onclick="browseit()" class="browseit"> <a class="btn  py-3 px-5 Browse" href="#tab-2">Browse More Jobs</a></button>
-              </div>
-          
+        <select class="form-select border-0 searchbutton">
+          <option selected>Recent keywords</option>
+          <option value="1">Category 1</option>
+          <option value="2">Category 2</option>
+          <option value="3">Category 3</option>
+        </select>
       </div>
-      <div id="tab-2" class="tab-pane fade show p-0 active">
-        <div class="job-item p-4 mb-4">
-            <div class="row g-4">
-                <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                    <img class="flex-shrink-0 img-fluid border rounded" src="img-3.jpg" alt="" style="width: 80px; height: 80px;">
-                    <div class="text-start ps-4">
-                        <h5 class="mb-3">Sre Balaji Trend India Private Limited</h5>
-                        <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark  me-2"></i>Tamil Nadu, INDIA</span>
-                        <span class="text-truncate me-3"> ₹ 1 lac</span>
-                        <p class="d-inline-flex gap-1">
-                            <a class="button1" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
-                              View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                            </a>
-                          
-                          </p>
-                  
-                          <div class="collapse" id="collapseExample6">
-                            <div class="card card-body">
-                                <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                    <a class="navbar-brand" href="#">Job Details</a>
-                                    <ul class="nav nav-pills">
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#scrollspyHeading11">Information</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#scrollspyHeading12">Description</a>
-                                      </li>
-                                     
-                                    </ul>
-                                  </nav>
-                                  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                                
-                                    <h4 id="scrollspyHeading11">Information</h4>
-                                    <div class="information">
-                                        <div class="info">
-                                <ul>
-                                        <li> Company Status: Active</li>   <li> Service : Manfacturing (Textiles) </li>
-                                    
-                                    </div>
-                                    <div class="mation">
-                                        <li> Class : Non-governmnet Company</li>   <li>  Category:Private</li>
-                                    </div>
-                                    </div>
-                                    <h4 id="scrollspyHeading12">Description</h4>
-                                    <p> Activity Description: Manfacturing (Textiles)  </p>
-                                    <p>Manufacture of other knitted and crocheted apparel
-                                        including hosiery.</p>
-                                    <p>D.No. 75,, Swarnapuri Enclave,, Tiruppur, Coimbatore, Tamil Nadu, India - 641652</p>
-                                    <p>Contact with the company :- srebalajitrendindiapvtltd@gmail.com</p></div></div></div>
-                       
-                     
-                       
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                    <div class="d-flex mb-3">
-                        <a class="me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                        <a class="button" href="">Apply Now</a>
-                    </div>
-                    <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-                </div>
-            </div>
-        </div>
-        <div class="job-item p-4 mb-4">
-            <div class="row g-4">
-                <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                    <img class="flex-shrink-0 img-fluid border rounded" src="img-2a.jpg" alt="" style="width: 80px; height: 80px;">
-                    <div class="text-start ps-4">
-                        <h5 class="mb-3">Sri Data Work Force Private Limited</h5>
-                        <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Telangana, INDIA</span>
-                        <span class="text-truncate me-3"> ₹ 1 lac</span>
-                        <p class="d-inline-flex gap-1">
-                            <a class="button1" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample">
-                              View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                            </a>
-                          
-                          </p>
-                  
-                          <div class="collapse" id="collapseExample7">
-                            <div class="card card-body">
-                                <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                    <a class="navbar-brand" href="#">Job Details</a>
-                                    <ul class="nav nav-pills">
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#scrollspyHeading13">Information</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#scrollspyHeading14">Description</a>
-                                      </li>
-                                     
-                                    </ul>
-                                  </nav>
-                                  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                                
-                                    <h4 id="scrollspyHeading13">Information</h4>
-                                    <div class="information">
-                                        <div class="info">
-                                <ul>
-                                        <li> Company Status: Active</li>   <li> Service : Community, personal & Social Services </li>
-                                    
-                                    </div>
-                                    <div class="mation">
-                                        <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                    </div>
-                                    </div>
-                                    <h4 id="scrollspyHeading14">Description</h4>
-                                    <p> Activity Description: Community, personal & Social Services</p>
-                                    <p>Human resources provision and management of human resources functions.</p>
-                                    <p>Sy No 168, Plot no 18,, Ayyappareddy Gudem,, Rangareddy, K. V.Rangareddy, Telangana, India - 501203</p>
-                                    <p>Contact with the company :-sudharshan2255@gmail.com </p></div></div></div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                    <div class="d-flex mb-3">
-                        <a class="me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                        <a class="button" href="">Apply Now</a>
-                    </div>
-                    <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-                </div>
-            </div>
-        </div>
-        <div class="job-item p-4 mb-4">
-            <div class="row g-4">
-                <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                    <img class="flex-shrink-0 img-fluid border rounded" src="imgbin-1.jpg" alt="" style="width: 80px; height: 80px;">
-                    <div class="text-start ps-4">
-                        <h5 class="mb-3">Banipur Infra Private Limited</h5>
-                        <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Haryana, INDIA</span>
-                        <span class="text-truncate me-3"> ₹ 2k - 1 lac</span>
-                        <p class="d-inline-flex gap-1">
-                            <a class="button1" data-bs-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample">
-                              View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                            </a>
-                          
-                          </p>
-                  
-                          <div class="collapse" id="collapseExample8">
-                            <div class="card card-body">
-                                <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                    <a class="navbar-brand" href="#">Job Details</a>
-                                    <ul class="nav nav-pills">
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#scrollspyHeading15">Information</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#scrollspyHeading16">Description</a>
-                                      </li>
-                                     
-                                    </ul>
-                                  </nav>
-                                  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                                
-                                    <h4 id="scrollspyHeading15">Information</h4>
-                                    <div class="information">
-                                        <div class="info">
-                                <ul>
-                                        <li> Company Status: Active</li>   <li> Service : Real Estate and Renting  </li>
-                                    
-                                    </div>
-                                    <div class="mation">
-                                        <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                    </div>
-                                    </div>
-                                    <h4 id="scrollspyHeading16">Description</h4>
-                                    <p> Activity Description: Real Estate and Renting </p>
-                                    <p>Real estate activities on a fee or contract bas.</p>
-                                    <p>B-68, Block-B, Phase-2, New Palam Vihar, Palam Vihar, Gurgaon, Haryana, India - 122017</p>
-                                    <p>Contact with the company :- sultansinghchowdhary@gmail.com</p></div></div></div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                    <div class="d-flex mb-3">
-                        <a class=" me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                        <a class="button" href="">Apply Now</a>   
-                    </div>
-                    <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-                </div>
-            </div>
-        </div>
-        <div class="job-item p-4 mb-4">
-            <div class="row g-4">
-                <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                    <img class="flex-shrink-0 img-fluid border rounded" src="imgbin.jpg" alt="" style="width: 80px; height: 80px;">
-                    <div class="text-start ps-4">
-                        <h5 class="mb-3">Baia Trade  Private Limited </h5>
-                        <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Karnataka, INDIA</span>
-                        <span class="text-truncate me-3"> ₹ 1 lac</span>
-                        <p class="d-inline-flex gap-1">
-                            <a class="button1" data-bs-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample">
-                              View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                            </a>
-                          
-                          </p>
-                  
-                          <div class="collapse" id="collapseExample9">
-                            <div class="card card-body">
-                                <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                    <a class="navbar-brand" href="#">Job Details</a>
-                                    <ul class="nav nav-pills">
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#scrollspyHeading17">Information</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#scrollspyHeading18">Description</a>
-                                      </li>
-                                     
-                                    </ul>
-                                  </nav>
-                                  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                                
-                                    <h4 id="scrollspyHeading17">Information</h4>
-                                    <div class="information">
-                                        <div class="info">
-                                <ul>
-                                        <li> Company Status: Active</li>   <li> Service : Manufacturing (Leather & products thereof) </li>
-                                    
-                                    </div>
-                                    <div class="mation">
-                                        <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                    </div>
-                                    </div>
-                                    <h4 id="scrollspyHeading18">Description</h4>
-                                    <p> Activity Description: Manufacturing (Leather & products thereof)</p>
-                                    <p>Manufacture of purse, ladies? handbags, artistic
-                                        leather presented articles and novelties.</p>
-                                    <p>A207, Raghuram Residency,,30, MSR Road, Gokula,, Bangalore North, Bangalore, Karnataka, India - 560054</p>
-                                    <p>Contact with the company :- patel.sushumna@gmail.com</p></div></div></div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                    <div class="d-flex mb-3">
-                        <a class="me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                        <a class="button" href="">Apply Now</a>
-                    </div>
-                    <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-                </div>
-            </div>
-        </div>
-        <div class="job-item p-4 mb-4">
-            <div class="row g-4">
-                <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                    <img class="flex-shrink-0 img-fluid border rounded" src="company-1.jpg" alt="" style="width: 80px; height: 80px;">
-                    <div class="text-start ps-4">
-                        <h5 class="mb-3"> Hexamax Technologies Private Limited</h5>
-                        <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Himachal Pradesh, INDIA</span>
-                        <span class="text-truncate me-3"> ₹ 1 lac</span>
-                        <p class="d-inline-flex gap-1">
-                            <a class="button1" data-bs-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample">
-                              View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                            </a>
-                          
-                          </p>
-                  
-                          <div class="collapse" id="collapseExample10">
-                            <div class="card card-body">
-                                <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                    <a class="navbar-brand" href="#">Job Details</a>
-                                    <ul class="nav nav-pills">
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#scrollspyHeading19">Information</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#scrollspyHeading20">Description</a>
-                                      </li>
-                                     
-                                    </ul>
-                                  </nav>
-                                  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                                
-                                    <h4 id="scrollspyHeading19">Information</h4>
-                                    <div class="information">
-                                        <div class="info">
-                                <ul>
-                                        <li> Company Status: Active</li>   <li> Service : Computer programming </li>
-                                    
-                                    </div>
-                                    <div class="mation">
-                                        <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                    </div>
-                                    </div>
-                                    <h4 id="scrollspyHeading20">Description</h4>
-                                    <p> Activity Description: Business Services</p>
-                                    <p>Other
-                                        information
-                                        technology and computer service activities n.e.c.</p>
-                                    <p>32/11, Post Office Bani,, Tehsil Barsar, Samoh,,Barsar, Hamirpur(HP), Himachal Pradesh, India - 174304</p>
-                                    <p>Contact with the company :-sigmawaretech@gmail.com</p></div></div></div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                    <div class="d-flex mb-3">
-                        <a class=" me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                        <a class="button" href="">Apply Now</a>
-                    </div>
-                    <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-                </div>
-            </div>
-         
-        </div>
-        <button onclick="browseit1()" class="browseit"> <a class="btn py-3 px-5 Browse" href="#tab-3">Browse More Jobs</a></button>
-  </div>
-  <div id="tab-3" class="tab-pane fade show p-0 active">
-    <div class="job-item p-4 mb-4">
-        <div class="row g-4">
-            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                <img class="flex-shrink-0 img-fluid border rounded" src="img-2a.jpg" alt="" style="width: 80px; height: 80px;">
-                <div class="text-start ps-4">
-                    <h5 class="mb-3">VNJ Media Private Limited</h5>
-                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark  me-2"></i>Telangana, INDIA</span>
-                    <span class="text-truncate me-3"> ₹ 1 lac</span>
-                    <p class="d-inline-flex gap-1">
-                        <a class="button1" data-bs-toggle="collapse" href="#collapseExample11" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                        </a>
-                      
-                      </p>
-              
-                      <div class="collapse" id="collapseExample11">
-                        <div class="card card-body">
-                            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                <a class="navbar-brand" href="#">Job Details</a>
-                                <ul class="nav nav-pills">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading21">Information</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading22">Description</a>
-                                  </li>
-                                 
-                                </ul>
-                              </nav>
-                              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                            
-                                <h4 id="scrollspyHeading21">Information</h4>
-                                <div class="information">
-                                    <div class="info">
-                            <ul>
-                                    <li> Company Status: Active</li>   <li> Service : Trading </li>
-                                
-                                </div>
-                                <div class="mation">
-                                    <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                </div>
-                                </div>
-                                <h4 id="scrollspyHeading22">Description</h4>
-                                <p> Activity Description:  Television programming and broadcasting activities</p>
-                                <p>Retail sale via E-commerce.</p>
-                                <p>Infocity Premlatha Grande,A Wing, Flat No 301,, Secunderabad, Hyderabad, Telangana, India - 500088</p>
-                                <p>Contact with the company :- support@3clconsulting.com</p></div></div></div>
-                   
-                 
-                   
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                <div class="d-flex mb-3">
-                    <a class="me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                    <a class="button" href="">Apply Now</a>
-                </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-            </div>
-        </div>
+      <div class="company">
+        <select class="form-select border-0 searchbutton">
+          <option selected>Company</option>
+          <option value="1">Category 1</option>
+          <option value="2">Category 2</option>
+          <option value="3">Category 3</option>
+        </select>
+      </div>
+      <div class="Location">
+        <select class="form-select border-0 searchbutton">
+          <option selected>Location</option>
+          <option value="1">Category 1</option>
+          <option value="2">Category 2</option>
+          <option value="3">Category 3</option>
+        </select>
+      </div>
+      <div class="findjob">
+        <input type="button" class="button" value="Find Job" />
+      </div>
     </div>
-    <div class="job-item p-4 mb-4">
-        <div class="row g-4">
-            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                <img class="flex-shrink-0 img-fluid border rounded" src="imgbin-1.jpg" alt="" style="width: 80px; height: 80px;">
-                <div class="text-start ps-4">
-                    <h5 class="mb-3">Dhanoday Agro Producer Company Limited</h5>
-                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Maharashtra, INDIA</span>
-                    <span class="text-truncate me-3"><i class="far fa-clock text-dark me-2"></i> ₹ 10k - 1.5 lac</span>
-                    <p class="d-inline-flex gap-1">
-                        <a class="button1" data-bs-toggle="collapse" href="#collapseExample12" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                        </a>
-                      
-                      </p>
-              
-                      <div class="collapse" id="collapseExample12">
-                        <div class="card card-body">
-                            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                <a class="navbar-brand" href="#">Job Details</a>
-                                <ul class="nav nav-pills">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading23">Information</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading24">Description</a>
-                                  </li>
-                                 
-                                </ul>
-                              </nav>
-                              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                            
-                                <h4 id="scrollspyHeading23">Information</h4>
-                                <div class="information">
-                                    <div class="info">
-                            <ul>
-                                    <li> Company Status: Active</li>   <li> Service : Crop and animals </li>
-                                
-                                </div>
-                                <div class="mation">
-                                    <li> Class : Non-governmnet Company</li>   <li>  Category:Private</li>
-                                </div>
-                                </div>
-                                <h4 id="scrollspyHeading24">Description</h4>
-                                <p> Activity Description:1 Agriculture and Allied Activities </p>
-                                <p>Agricultural activities on a fee or contract basis (preparation of fields, establishing a crop, treatment of crops, crop spraying,
-                                    trimming of fruit
-                                    trees and vines,
-                                    transplanting of rice, thinning of beets, harvesting, pest control in connection with agriculture etc.).</p>
-                                <p>Gala No 60/61, Bhose Comm, Opposite Gram Panchayat, Pandharpur, Solapur, Maharashtra, India - 413304</p>
-                                <p>Contact with the company :- ghodake.bapu@gmail.com</p></div></div></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                <div class="d-flex mb-3">
-                    <a class="me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                    <a class="button" href="">Apply Now</a>
-                </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-            </div>
-        </div>
-    </div>
-    <div class="job-item p-4 mb-4">
-        <div class="row g-4">
-            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                <img class="flex-shrink-0 img-fluid border rounded" src="imgbin.jpg" alt="" style="width: 80px; height: 80px;">
-                <div class="text-start ps-4">
-                    <h5 class="mb-3">Sari Consultancy Services Private Limited</h5>
-                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>West Bengal, INDIA</span>
-                    <span class="text-truncate me-3"> ₹ 1 lac - 1.5 lac</span>
-                    <p class="d-inline-flex gap-1">
-                        <a class="button1" data-bs-toggle="collapse" href="#collapseExample13" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                        </a>
-                      
-                      </p>
-              
-                      <div class="collapse" id="collapseExample13">
-                        <div class="card card-body">
-                            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                <a class="navbar-brand" href="#">Job Details</a>
-                                <ul class="nav nav-pills">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading25">Information</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading26">Description</a>
-                                  </li>
-                                 
-                                </ul>
-                              </nav>
-                              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                            
-                                <h4 id="scrollspyHeading25">Information</h4>
-                                <div class="information">
-                                    <div class="info">
-                            <ul>
-                                    <li> Company Status: Active</li>   <li> Service :  Community, personal & Social Service </li>
-                                
-                                </div>
-                                <div class="mation">
-                                    <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                </div>
-                                </div>
-                                <h4 id="scrollspyHeading26">Description</h4>
-                                <p> Activity Description: Community, personal & Social Services</p>
-                                <p>Educational support services.</p>
-                                <p>53/5A,HAZRA ROAD,Kolkata, Kolkata, West Bengal, India - 700019</p>
-                                <p>Contact with the company :- sahilgarg2816@gmail.com</p></div></div></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                <div class="d-flex mb-3">
-                    <a class=" me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                    <a class="button" href="">Apply Now</a>   
-                </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-            </div>
-        </div>
-    </div>
-    <div class="job-item p-4 mb-4">
-        <div class="row g-4">
-            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                <img class="flex-shrink-0 img-fluid border rounded" src="company-1.jpg" alt="" style="width: 80px; height: 80px;">
-                <div class="text-start ps-4">
-                    <h5 class="mb-3">Indusrevo Engineering Private Limited </h5>
-                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Karnataka, INDIA</span>
-                    <span class="text-truncate me-3"> ₹ 1 lac</span>
-                    <p class="d-inline-flex gap-1">
-                        <a class="button1" data-bs-toggle="collapse" href="#collapseExample14" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                        </a>
-                      
-                      </p>
-              
-                      <div class="collapse" id="collapseExample14">
-                        <div class="card card-body">
-                            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                <a class="navbar-brand" href="#">Job Details</a>
-                                <ul class="nav nav-pills">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading27">Information</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading28">Description</a>
-                                  </li>
-                                 
-                                </ul>
-                              </nav>
-                              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                            
-                                <h4 id="scrollspyHeading27">Information</h4>
-                                <div class="information">
-                                    <div class="info">
-                            <ul>
-                                    <li> Company Status: Active</li>   <li> Service : Community, personal & Social Servi </li>
-                                
-                                </div>
-                                <div class="mation">
-                                    <li> Class : Non-governmnet Company</li>   <li>  Category:Private</li>
-                                </div>
-                                </div>
-                                <h4 id="scrollspyHeading28">Description</h4>
-                                <p> Activity Description:Community, personal & Social Servi</p>
-                                <p>Architectural and engineering activities and related technical consultancy.</p>
-                                <p>766/11, Bhagyanagar,, Tilakawadi, Belagavi 590006, Belgaum, Belgaum, Karnataka, India - 590006</p>
-                                <p>Contact with the company :- vernekar.abhinav@live.com</p></div></div></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                <div class="d-flex mb-3">
-                    <a class="me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                    <a class="button" href="">Apply Now</a>
-                </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-            </div>
-        </div>
-    </div>
-    <div class="job-item p-4 mb-4">
-        <div class="row g-4">
-            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                <img class="flex-shrink-0 img-fluid border rounded" src="imgbin-1.jpg" alt="" style="width: 80px; height: 80px;">
-                <div class="text-start ps-4">
-                    <h5 class="mb-3">  Sai Ram Construction and OutSourcing (OPC) Private Limited</h5>
-                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Madhya Pradesh, INDIA</span>
-                    <span class="text-truncate me-3"> ₹ 50k - 5 lac</span>
-                    <p class="d-inline-flex gap-1">
-                        <a class="button1" data-bs-toggle="collapse" href="#collapseExample15" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                        </a>
-                      
-                      </p>
-              
-                      <div class="collapse" id="collapseExample15">
-                        <div class="card card-body">
-                            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                <a class="navbar-brand" href="#">Job Details</a>
-                                <ul class="nav nav-pills">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading29">Information</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading30">Description</a>
-                                  </li>
-                                 
-                                </ul>
-                              </nav>
-                              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                            
-                                <h4 id="scrollspyHeading29">Information</h4>
-                                <div class="information">
-                                    <div class="info">
-                            <ul>
-                                    <li> Company Status: Active</li>   <li> Service : Community, personal & Social Services </li>
-                                
-                                </div>
-                                <div class="mation">
-                                    <li> Class : Non-governmnet Company</li>   <li>  Category:One Person Company</li>
-                                </div>
-                                </div>
-                                <h4 id="scrollspyHeading30">Description</h4>
-                                <p> Activity Description: Community, personal & Social Services</p>
-                                <p>Human resources provision and management of human resources functions
 
-                                    .</p>
-                                <p>303 Durga Mandir,Pipariya, Jabalpur, Jabalpur, Madhya Pradesh, India - 482005</p>
-                                <p>Contact with the company :- sairamconstrution23@gmail.com</p></div></div></div>
-                </div>
+    <div class="container-xxl py-5">
+      <div class="container">
+          <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                href="#tab-1"
+              >
+                <h1 class="mt-n1 mb-0 job">Job Listing</h1>
+              </a>
+              <div class="hr">
+                <div class="circle"></div>
+              </div>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+              <div id="company-list">
+              </div>
             </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                <div class="d-flex mb-3">
-                    <a class=" me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                    <a class="button" href="">Apply Now</a>
-                </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-            </div>
+          </div>
         </div>
-     
+      </div>
     </div>
-    <button onclick="browseit2()" class="browseit"> <a class="btn py-3 px-5 Browse" href="#tab-4">Browse More Jobs</a></button>
-</div>
-<div id="tab-4" class="tab-pane fade show p-0 active">
-    <div class="job-item p-4 mb-4">
-        <div class="row g-4">
-            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                <img class="flex-shrink-0 img-fluid border rounded" src="img-2a.jpg" alt="" style="width: 80px; height: 80px;">
-                <div class="text-start ps-4">
-                    <h5 class="mb-3">Pertinence Qtech Solutions(OPC) Private Limited</h5>
-                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark  me-2"></i>Telangana, INDIA</span>
-                    <span class="text-truncate me-3"> ₹ 1 lac</span>
-                    <p class="d-inline-flex gap-1">
-                        <a class="button1" data-bs-toggle="collapse" href="#collapseExample16" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                        </a>
-                      
-                      </p>
-              
-                      <div class="collapse" id="collapseExample16">
-                        <div class="card card-body">
-                            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                <a class="navbar-brand" href="#">Job Details</a>
-                                <ul class="nav nav-pills">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading31">Information</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading32">Description</a>
-                                  </li>
-                                 
-                                </ul>
-                              </nav>
-                              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                            
-                                <h4 id="scrollspyHeading31">Information</h4>
-                                <div class="information">
-                                    <div class="info">
-                            <ul>
-                                    <li> Company Status: Active</li>   <li> Service : Business Services</li>
-                                
-                                </div>
-                                <div class="mation">
-                                    <li> Class : Non-governmnet Company</li>   <li>  Category: One Person Company</li>
-                                </div>
-                                </div>
-                                <h4 id="scrollspyHeading32">Description</h4>
-                                <p> Activity Description:Business Services</p>
-                                <p>s Other
-                                    information
-                                    technology and computer service activities n.e.c.</p>
-                                <p>2-190 Charla Gudem,Tipparthi, Nalgonda, Nalgonda, Telangana, India - 508247</p>
-                                <p>Contact with the company :- vbaireddy495@gmail.com</p></div></div></div>
-                   
-                 
-                   
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                <div class="d-flex mb-3">
-                    <a class="me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                    <a class="button" href="">Apply Now</a>
-                </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-            </div>
-        </div>
-    </div>
-    <div class="job-item p-4 mb-4">
-        <div class="row g-4">
-            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                <img class="flex-shrink-0 img-fluid border rounded" src="img-3.jpg" alt="" style="width: 80px; height: 80px;">
-                <div class="text-start ps-4">
-                    <h5 class="mb-3">Cityshine Developers Private Limited</h5>
-                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Maharashtra, INDIA</span>
-                    <span class="text-truncate me-3"> ₹ 1 lac</span>
-                    <p class="d-inline-flex gap-1">
-                        <a class="button1" data-bs-toggle="collapse" href="#collapseExample17" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                        </a>
-                      
-                      </p>
-              
-                      <div class="collapse" id="collapseExample17">
-                        <div class="card card-body">
-                            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                <a class="navbar-brand" href="#">Job Details</a>
-                                <ul class="nav nav-pills">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading33">Information</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading34">Description</a>
-                                  </li>
-                                 
-                                </ul>
-                              </nav>
-                              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                            
-                                <h4 id="scrollspyHeading33">Information</h4>
-                                <div class="information">
-                                    <div class="info">
-                            <ul>
-                                    <li> Company Status: Active</li>   <li> Service : Trading </li>
-                                
-                                </div>
-                                <div class="mation">
-                                    <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                </div>
-                                </div>
-                                <h4 id="scrollspyHeading34">Description</h4>
-                                <p> Activity Description:8 Real Estate and Renting</p>
-                                <p>Real estate activities on a fee or contract basis.</p>
-                                <p>SHOP NO. 18/19,TAL INDAPUR, Daund, Pune, Maharashtra, India - 413130</p>
-                                <p>Contact with the company :- cityshinedevelopers@gmail.com</p></div></div></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                <div class="d-flex mb-3">
-                    <a class="me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                    <a class="button" href="">Apply Now</a>
-                </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-            </div>
-        </div>
-    </div>
-    <div class="job-item p-4 mb-4">
-        <div class="row g-4">
-            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                <img class="flex-shrink-0 img-fluid border rounded" src="imgbin-1.jpg" alt="" style="width: 80px; height: 80px;">
-                <div class="text-start ps-4">
-                    <h5 class="mb-3">Bhagyashri Transport Enterprise (I) Private Limited</h5>
-                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Banglore, INDIA</span>
-                    <span class="text-truncate me-3"><i class="far fa-clock text-dark me-2"></i> ₹ 50k - 1 lac</span>
-                    <p class="d-inline-flex gap-1">
-                        <a class="button1" data-bs-toggle="collapse" href="#collapseExample18" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                        </a>
-                      
-                      </p>
-              
-                      <div class="collapse" id="collapseExample18">
-                        <div class="card card-body">
-                            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                <a class="navbar-brand" href="#">Job Details</a>
-                                <ul class="nav nav-pills">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading35">Information</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading36">Description</a>
-                                  </li>
-                                 
-                                </ul>
-                              </nav>
-                              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                            
-                                <h4 id="scrollspyHeading35">Information</h4>
-                                <div class="information">
-                                    <div class="info">
-                            <ul>
-                                    <li> Company Status: Active</li>   <li> Service : Trading </li>
-                                
-                                </div>
-                                <div class="mation">
-                                    <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                </div>
-                                </div>
-                                <h4 id="scrollspyHeading36">Description</h4>
-                                <p> Activity Description: Trading</p>
-                                <p>Retail sale via E-commerce.</p>
-                                <p>C/OSRI HEM CHANDRA PANDEY, GANPATI COLONY, HIMMATPUR, Haldwani, Nainital, Uttarakhand, India - 263139</p>
-                                <p>Contact with the company :- sultansinghchowdhary@gmail.com</p></div></div></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                <div class="d-flex mb-3">
-                    <a class=" me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                    <a class="button" href="">Apply Now</a>   
-                </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-            </div>
-        </div>
-    </div>
-    <div class="job-item p-4 mb-4">
-        <div class="row g-4">
-            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                <img class="flex-shrink-0 img-fluid border rounded" src="imgbin.jpg" alt="" style="width: 80px; height: 80px;">
-                <div class="text-start ps-4">
-                    <h5 class="mb-3">Bhojane Brother's Prouducts Private Limited </h5>
-                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>Mharashtra, INDIA</span>
-                    <span class="text-truncate me-3"> ₹ 1 lac - 10 lac</span>
-                    <p class="d-inline-flex gap-1">
-                        <a class="button1" data-bs-toggle="collapse" href="#collapseExample19" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                        </a>
-                      
-                      </p>
-              
-                      <div class="collapse" id="collapseExample19">
-                        <div class="card card-body">
-                            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                <a class="navbar-brand" href="#">Job Details</a>
-                                <ul class="nav nav-pills">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading37">Information</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading38">Description</a>
-                                  </li>
-                                 
-                                </ul>
-                              </nav>
-                              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                            
-                                <h4 id="scrollspyHeading37">Information</h4>
-                                <div class="information">
-                                    <div class="info">
-                            <ul>
-                                    <li> Company Status: Active</li>   <li> Service :Manufacturing (Metals & Chemicals, and products thereofe) </li>
-                                
-                                </div>
-                                <div class="mation">
-                                    <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                </div>
-                                </div>
-                                <h4 id="scrollspyHeading38">Description</h4>
-                                <p> Activity Description: Manufacturing (Metals & Chemicals, and products thereof)</p>
-                                <p>Manufacture of moulded
-                                    industrial accessories of plastics electrical
-                                    insulating fittings of plastics.</p>
-                                <p>UNIT NO G021 GRD FLR, GURU GOBIND SINGH OFF WEH,Goregaon East, Mumbai, Maharashtra, India - 400063</p>
-                                <p>Contact with the company :-BHOJANEMAHESH0@GMAIL.COM</p></div></div></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                <div class="d-flex mb-3">
-                    <a class="me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                    <a class="button" href="">Apply Now</a>
-                </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-            </div>
-        </div>
-    </div>
-    <div class="job-item p-4 mb-4">
-        <div class="row g-4">
-            <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                <img class="flex-shrink-0 img-fluid border rounded" src="company-1.jpg" alt="" style="width: 80px; height: 80px;">
-                <div class="text-start ps-4">
-                    <h5 class="mb-3"> Raimangal Micro Service Foundation</h5>
-                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark me-2"></i>West Bengal, INDIA</span>
-                    <span class="text-truncate me-3"> ₹ 10 lac - 15 lac</span>
-                    <p class="d-inline-flex gap-1">
-                        <a class="button1" data-bs-toggle="collapse" href="#collapseExample20 " role="button" aria-expanded="false" aria-controls="collapseExample">
-                          View details <i class="fa-solid fa-angle-right fa-1x"></i>
-                        </a>
-                      
-                      </p>
-              
-                      <div class="collapse" id="collapseExample20">
-                        <div class="card card-body">
-                            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                                <a class="navbar-brand" href="#">Job Details</a>
-                                <ul class="nav nav-pills">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading39">Information</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading40">Description</a>
-                                  </li>
-                                 
-                                </ul>
-                              </nav>
-                              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                            
-                                <h4 id="scrollspyHeading39">Information</h4>
-                                <div class="information">
-                                    <div class="info">
-                            <ul>
-                                    <li> Company Status: Active</li>   <li> Service :Community, personal & Social Services </li>
-                                
-                                </div>
-                                <div class="mation">
-                                    <li> Class : Non-governmnet Company</li>   <li>  Category: Private</li>
-                                </div>
-                                </div>
-                                <h4 id="scrollspyHeading40">Description</h4>
-                                <p> Activity Description: Community, personal & Social Services</p>
-                                <p>Other human health activities n.e.c. (including
-                                    independent ambulance activities)
-                                    .</p>
-                               
-                                <p>Contact with the company :-sanjoydhara212 @gmail.com</p></div></div></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                <div class="d-flex mb-3">
-                    <a class=" me-3" href=""><i class="far fa-heart text-dark"></i></a>
-                    <a class="button" href="">Apply Now</a>
-                </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-dark me-2"></i>Date Line: 01 June, 2023</small>
-            </div>
-        </div>
-     
-    </div>
-    
-    <button onclick="browseit3()" class="browseit"> <a class="btn  py-3 px-5 Browse" href="#tab-1">Previous</a></button>
-   <!-- <div class="page">
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#tab-1" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#tab-1">1</a></li>
-          <li class="page-item"><a class="page-link" href="#tab-2">2</a></li>
-          <li class="page-item"><a class="page-link" href="#tab-3">3</a></li>
-          <li class="page-item"><a class="page-link" href="tab-4">4</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#tab-4" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      </div> -->
-  </div>
 
+    <script>
+      var companyData = [
+        {
+          name: "Company 1",
+          location: "Location 1",
+          salary: "Salary 1",
+          description: "Description 1",
+          status: "Active",
+          service: "Trading",
+          class: "Non-government Company",
+          category: "One Person Company",
+          activityDescription: "Trading",
+          address:
+            "C/OSRI HEM CHANDRA PANDEY, GANPATI COLONY, HIMMATPUR, Haldwani, Nainital, Uttarakhand, India - 263139",
+          contactEmail: "sscorporaterg@gmail.com",
 
-  <script src="comp.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        },
+        {
+          name: "Company 2",
+          location: "Location 2",
+          salary: "Salary 2",
+          description: "Description 2",
+          status: "Inactive",
+          service: "Manufacturing",
+          class: "Private Limited Company",
+          category: "Large Scale Company",
+          activityDescription: "Manufacturing and Production",
+          address: "123 Main Street, City, Country - 12345",
+          contactEmail: "contact@example.com",
+        },
+      ];
 
-</body>
+      function populateCompanyData() {
+        var companyList = document.getElementById("company-list");
+
+        companyList.innerHTML = "";
+
+        companyData.forEach(function (company, index) {
+          var companyItem = document.createElement("div");
+          companyItem.className = "job-item p-4 mb-4";
+          companyItem.innerHTML = `
+                    <div class="row g-4">
+                        <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                            <!-- Add company image here -->
+                            <div class="text-start ps-4">
+                                <h5 class="mb-3">${company.name}</h5>
+                                <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-dark  me-2"></i>${company.location}</span>
+                                <span class="text-truncate me-3">${company.salary}</span>
+                                <!-- Add more company details here -->
+                                <p class="d-inline-flex gap-1">
+                                        View details <i class="fa-solid fa-angle-right fa-1x"></i>
+                                    </a>
+                                </p>
+                                <!-- Add more details in a collapsible section here -->
+                                <div class="collapse" id="collapseExample${index}">
+                                    <div class="card card-body">
+                                        <h4>Company Details</h4>
+                                        <ul>
+                                            <li>Status: ${company.status}</li>
+                                            <li>Service: ${company.service}</li>
+                                            <li>Class: ${company.class}</li>
+                                            <li>Category: ${company.category}</li>
+                                            <li>Activity Description: ${company.activityDescription}</li>
+                                            <li>Address: ${company.address}</li>
+                                            <li>Contact Email: ${company.contactEmail}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+          companyList.appendChild(companyItem);
+
+        });
+      }
+
+      populateCompanyData();
+    </script>
+  </body>
 </html>

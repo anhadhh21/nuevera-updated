@@ -390,5 +390,156 @@
         <script src = "assets/js/script.js"></script>
         <!-- app js -->
         <script src="assets/js/app.js"></script>
-    </body>
+
+    <script>
+      function getFormValues() {
+        const formValues = {};
+
+        // About Section
+        formValues.firstname = document.getElementById("firstname").value;
+        formValues.middlename = document.getElementById("middlename").value;
+        formValues.lastname = document.getElementById("lastname").value;
+        formValues.image = document.getElementById("image").value;
+        formValues.designation = document.getElementById("designation").value;
+        formValues.address = document.getElementById("address").value;
+        formValues.email = document.getElementById("email").value;
+        formValues.phoneno = document.getElementById("phoneno").value;
+        formValues.summary = document.getElementById("summary").value;
+
+        // Achievements
+        formValues.achievements = [];
+        const achievementElements = document.querySelectorAll(
+          ".cv-form-row-achievement"
+        );
+        achievementElements.forEach(function (achievementElement) {
+          const achieve_title =
+            achievementElement.querySelector(".achieve_title").value;
+          const achieve_description = achievementElement.querySelector(
+            ".achieve_description"
+          ).value;
+          formValues.achievements.push({ achieve_title, achieve_description });
+        });
+
+        // Experiences
+        formValues.experiences = [];
+        const experienceElements = document.querySelectorAll(
+          ".cv-form-row-experience"
+        );
+        experienceElements.forEach(function (experienceElement) {
+          const exp_title = experienceElement.querySelector(".exp_title").value;
+          const exp_organization =
+            experienceElement.querySelector(".exp_organization").value;
+          const exp_location =
+            experienceElement.querySelector(".exp_location").value;
+          const exp_start_date =
+            experienceElement.querySelector(".exp_start_date").value;
+          const exp_end_date =
+            experienceElement.querySelector(".exp_end_date").value;
+          const exp_description =
+            experienceElement.querySelector(".exp_description").value;
+          formValues.experiences.push({
+            exp_title,
+            exp_organization,
+            exp_location,
+            exp_start_date,
+            exp_end_date,
+            exp_description,
+          });
+        });
+
+        // Educations
+        formValues.educations = [];
+        const educationElements = document.querySelectorAll(
+          ".cv-form-row-education"
+        );
+        educationElements.forEach(function (educationElement) {
+          const edu_school =
+            educationElement.querySelector(".edu_school").value;
+          const edu_degree =
+            educationElement.querySelector(".edu_degree").value;
+          const edu_city = educationElement.querySelector(".edu_city").value;
+          const edu_start_date =
+            educationElement.querySelector(".edu_start_date").value;
+          const edu_graduation_date = educationElement.querySelector(
+            ".edu_graduation_date"
+          ).value;
+          const edu_description =
+            educationElement.querySelector(".edu_description").value;
+          formValues.educations.push({
+            edu_school,
+            edu_degree,
+            edu_city,
+            edu_start_date,
+            edu_graduation_date,
+            edu_description,
+          });
+        });
+
+        // Projects
+        formValues.projects = [];
+        const projectElements = document.querySelectorAll(
+          ".cv-form-row-project"
+        );
+        projectElements.forEach(function (projectElement) {
+          const proj_title = projectElement.querySelector(".proj_title").value;
+          const proj_link = projectElement.querySelector(".proj_link").value;
+          const proj_description =
+            projectElement.querySelector(".proj_description").value;
+          formValues.projects.push({ proj_title, proj_link, proj_description });
+        });
+
+        // Skills
+        formValues.skills = [];
+        const skillElements = document.querySelectorAll(".cv-form-row-skills");
+        skillElements.forEach(function (skillElement) {
+          const skill = skillElement.querySelector(".skill").value;
+          formValues.skills.push(skill);
+        });
+
+        return formValues;
+      }
+
+      function generateCV() {
+        const formValues = getFormValues();
+        // Here, you can use formValues to dynamically generate your CV preview.
+        // Update the preview elements with the formValues.
+        // Example:
+        document.getElementById(
+          "fullname_dsp"
+        ).textContent = `${formValues.firstname} ${formValues.lastname}`;
+      }
+
+      async function createResume() {
+        const formValues = getFormValues();
+
+        try {
+          const response = await fetch(
+            "http://localhost:8000/api/v1/resume/createResume",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(formValues), // Convert formValues to JSON
+            }
+          );
+
+          if (response.ok) {
+            const responseData = await response.json();
+            alert("resume created succesfully");
+            console.log("Resume created successfully:", responseData);
+          } else {
+            alert("resume creation Failed");
+            console.error("Error creating resume:", response.statusText);
+          }
+        } catch (error) {
+          console.error("Error creating resume:", error);
+        }
+      }
+
+      function printCV() {
+        const formValues = getFormValues();
+      }
+    </script>
+  </body>
 </html>

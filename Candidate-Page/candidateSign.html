@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="flex flex-col items-center px-6 pt-8 mx-auto md:h-100vh pt-10 dark:bg-gray-900"
+    >
+      <h1 class="text-2xl text-white font-bold mb-6">Signup as a Job Seeker</h1>
+      <div
+        class="w-full max-w-4xl p-6 space-y-8 sm:p-8 rounded-lg shadow dark:bg-gray-800"
+      >
+        <div>
+          <h2 class="text-2xl text-white font-bold">Create Your Account</h2>
+          <a href="./SignUpAsJobProvider.html" class="text-blue-500"
+            >Apply as a Job Provider</a
+          >
+        </div>
+
+        <form action="" method="post">
+          <div>
+            <label
+              for="full_name"
+              class="text-dm block mb-2 text-white font-bold"
+              >Your Full Name</label
+            >
+            <input
+              type="text"
+              name="full_name"
+              id="full_name"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="email"
+              class="text-dm block mb-2 text-white font-bold mt-2"
+              >Your Email</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              placeholder="name@google.com"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="password"
+              class="text-dm block mb-2 mt-2 text-white font-bold"
+              >Password</label
+            >
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              placeholder="********"
+              required
+            />
+          </div>
+
+          <hr class="mt-4" />
+          <!-- contact information -->
+          <div>
+            <label
+              for="contactno"
+              class="text-sm font-bold text-white mt-2 mb-2 block"
+              >Contact Information</label
+            >
+            <input
+              type="text"
+              name="contactno"
+              id="contactno"
+              placeholder="Contact No"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            />
+          </div>
+          <hr class="mt-4" />
+
+          <div>
+            <label for="dob" class="text-sm font-bold text-white mt-2 block"
+              >Personal Information:</label
+            >
+            <div class="block mt-2">
+              <div>
+                <label
+                  for="date_of_birth"
+                  class="text-sm text-white font-bold mr-4"
+                  >Date of Birth</label
+                >
+                <input
+                  type="date"
+                  name="date_of_birth"
+                  id="date_of_birth"
+                  placeholder="Date of Birth"
+                  class="mr-2 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 inline p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                />
+              </div>
+              <div class="mt-2">
+                <label for="mother_tongue" class="text-sm text-white font-bold"
+                  >Mother Tongue</label
+                >
+                <input
+                  type="text"
+                  name="mother_tongue"
+                  id="mother_tongue"
+                  placeholder="Mother Tongue"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 inline p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                />
+              </div>
+            </div>
+          </div>
+          <hr class="mt-4" />
+          <!-- educational background -->
+          <div>
+            <div>
+              <label
+                for="educational_bg"
+                class="text-sm text-white block mt-4 font-bold"
+                >Educational Background:</label
+              >
+              <div class="mt-4">
+                <input
+                  type="text"
+                  name="qualification"
+                  id="qualification"
+                  placeholder="Qualification.."
+                  class="mr-6 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 inline p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                />
+                <input
+                  type="text"
+                  name="university"
+                  id="university"
+                  placeholder="University.."
+                  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- work experience -->
+          <hr class="mt-4" />
+          <div>
+            <label
+              for="work_experience"
+              class="text-sm font-bold text-white mt-2 block"
+              >Work Experience:</label
+            >
+            <select
+              name="work_experience"
+              id="work_experience"
+              class="text-sm rounded-lg p-2 block mt-2 bg-white"
+            >
+              <option value="Fresher">Fresher</option>
+              <option value="Experience">Experience</option>
+            </select>
+          </div>
+          <hr class="mt-4" />
+          <!-- job role -->
+          <div>
+            <label
+              for="job_role"
+              class="text-sm mt-2 font-bold text-white block"
+              >Job Role:</label
+            >
+          </div>
+          <div class="block mt-2">
+            <label
+              for="job_title"
+              class="text-sm mt-2 font-bold text-white inline"
+              >Job Title</label
+            >
+            <input
+              type="text"
+              name="job_title"
+              id="job_title"
+              placeholder="Web Dev/AI Dev.."
+              class="mx-2 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            />
+          </div>
+          <div class="mt-4">
+            <label
+              for="job_location"
+              class="text-sm mt-2 font-bold text-white inline"
+              >Job Location:</label
+            >
+            <select
+              name="job_location"
+              id="job_location"
+              class="text-sm rounded-lg p-2 inline mt-2 bg-white ml-2"
+            >
+              <option value="WorkFromHome">Work From Home</option>
+              <option value="InOffice">In Office</option>
+            </select>
+          </div>
+          <!-- upload resume -->
+          <hr class="mt-4" />
+          <div class="mt-4">
+            <label for="resume" class="text-sm text-white inline font-bold"
+              >Upload Resume</label
+            >
+            <input
+              type="file"
+              name="resume"
+              id="resume"
+              class="ml-2 p-2 bg-gray-800 rounded-lg border border-gray-300 text-white"
+            />
+          </div>
+
+          <!-- create an account -->
+          <div>
+            <button
+              type="submit"
+              class="bg-blue-500 text-white font-bold rounded-lg p-2.5 mt-4 w-full hover:text-black hover:bg-blue-700"
+            >
+              Create an account
+            </button>
+          </div>
+
+          <!-- direct login -->
+          <div class="mt-4">
+            <a href="login.html" class="text-blue-500 hover:text-blue-700"
+              >Already have an account? Login</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="register.js"></script>
+  </body>
+</html>
